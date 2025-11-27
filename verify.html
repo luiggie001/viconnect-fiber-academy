@@ -24,7 +24,7 @@
       <a href="index.html" class="hover:text-sky-400">Home</a>
       <a href="courses.html" class="hover:text-sky-400">Courses</a>
       <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
-      <a href="verify.html" class="hover:text-sky-400">Verify</a>
+      <a href="verify.html" class="hover:text-sky-400 text-sky-400 font-semibold">Verify</a>
       <a href="contact.html" class="hover:text-sky-400">Contact</a>
     </nav>
   </div>
@@ -32,39 +32,129 @@
 
 <main class="max-w-6xl mx-auto px-4 py-10">
 
-<section class="max-w-xl">
-  <h1 class="text-2xl font-bold mb-2">Certificate Verification / Verificación de Certificado</h1>
-  <p class="text-sm text-slate-300 mb-4">
-    EN: Companies can verify a technician’s certification by submitting the certificate ID.<br/>
-    ES: Las empresas pueden verificar la certificación enviando el ID del certificado.
-  </p>
-
-  <form class="border border-slate-800 rounded-xl p-4 bg-slate-900/60 text-xs text-slate-200 space-y-3">
-
-    <div>
-      <label class="block mb-1 text-[11px]">Certificate ID / ID de Certificado</label>
-      <input type="text" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs"
-        placeholder="Example: VFA-FOT-2025-00123" />
-    </div>
-
-    <div>
-      <label class="block mb-1 text-[11px]">Company / Empresa (optional)</label>
-      <input type="text" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs"
-        placeholder="Company name / Nombre de empresa" />
-    </div>
-
-    <button type="button" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-[11px] font-medium">
-      Submit Request / Enviar Solicitud
-    </button>
-
-    <p class="text-[11px] text-slate-500 mt-2">
-      EN: Later you can connect this form to your email or a small database.<br/>
-      ES: Más adelante puede conectar este formulario a su correo o una pequeña base de datos.
+  <section class="max-w-xl">
+    <h1 class="text-2xl font-bold mb-2">Certificate Verification / Verificación de Certificado</h1>
+    <p class="text-sm text-slate-300 mb-4">
+      EN: Enter the Certificate ID shown on the document to verify that it was issued by Viconnect Fiber Academy.<br/>
+      ES: Ingrese el ID de Certificado que aparece en el documento para verificar que fue emitido por Viconnect Fiber Academy.
     </p>
 
-  </form>
-</section>
+    <!-- Form -->
+    <div class="border border-slate-800 rounded-xl p-4 bg-slate-900/60 text-xs text-slate-200 space-y-3">
+      <div>
+        <label class="block mb-1 text-[11px]">Certificate ID / ID de Certificado</label>
+        <input id="certInput" type="text"
+               class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs"
+               placeholder="Example: VFA-FOT-00001" />
+      </div>
+      <button id="checkBtn"
+              class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-[11px] font-medium">
+        Check Certificate / Verificar Certificado
+      </button>
+      <p class="text-[11px] text-slate-500">
+        Tip: Certificate IDs follow this format: VFA-FOT-XXXXX, VFA-SPL-XXXXX, VFA-OTDR-XXXXX, VFA-OSP-XXXXX.
+      </p>
+    </div>
+
+    <!-- Result -->
+    <div id="result" class="mt-6 hidden">
+      <!-- Filled by JavaScript -->
+    </div>
+
+    <p class="mt-8 text-[11px] text-slate-500">
+      EN: If you believe a certificate has been altered or is not listed, please contact
+      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
+        viconnectfiberacademy@gmail.com
+      </a>.<br/>
+      ES: Si usted cree que un certificado ha sido alterado o no aparece en el sistema, por favor escriba a
+      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
+        viconnectfiberacademy@gmail.com
+      </a>.
+    </p>
+  </section>
 
 </main>
+
+<script>
+// ---------------------------------------------
+// Simple in-page database of valid certificates
+// ---------------------------------------------
+//
+// Add new certificates here when you issue them.
+// Example structure:
+// {
+//   id: "VFA-FOT-00001",
+//   name: "John Doe",
+//   course: "Fiber Optic Technician (FOT)",
+//   date: "2025-01-15"
+// }
+
+const certificates = [
+  // SAMPLE ENTRIES – change or delete these when you start issuing real certs
+  {
+    id: "VFA-FOT-00001",
+    name: "Sample Student",
+    course: "Fiber Optic Technician (FOT)",
+    date: "2025-01-15"
+  },
+  {
+    id: "VFA-SPL-00001",
+    name: "Sample Student",
+    course: "Fiber Splicing Professional",
+    date: "2025-01-20"
+  }
+];
+
+// -----------------------------
+// Verification handler
+// -----------------------------
+const input = document.getElementById("certInput");
+const button = document.getElementById("checkBtn");
+const result = document.getElementById("result");
+
+button.addEventListener("click", () => {
+  const value = input.value.trim().toUpperCase();
+  if (!value) return;
+
+  const cert = certificates.find(c => c.id === value);
+
+  result.classList.remove("hidden");
+
+  if (cert) {
+    // Valid certificate
+    result.innerHTML = `
+      <div class="border border-emerald-600 bg-emerald-900/40 rounded-xl p-4 text-xs text-emerald-50">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+          <p class="font-semibold text-sm">Certificate Found / Certificado Válido</p>
+        </div>
+        <p><span class="font-semibold">Name / Nombre:</span> ${cert.name}</p>
+        <p><span class="font-semibold">Course / Curso:</span> ${cert.course}</p>
+        <p><span class="font-semibold">Certificate ID:</span> ${cert.id}</p>
+        <p><span class="font-semibold">Date Issued / Fecha de Emisión:</span> ${cert.date}</p>
+        <p class="mt-2 text-[11px] text-emerald-200">
+          EN: This certificate was issued by Viconnect Fiber Academy.<br/>
+          ES: Este certificado fue emitido por Viconnect Fiber Academy.
+        </p>
+      </div>
+    `;
+  } else {
+    // Invalid certificate
+    result.innerHTML = `
+      <div class="border border-rose-600 bg-rose-900/40 rounded-xl p-4 text-xs text-rose-50">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-2 h-2 rounded-full bg-rose-400"></div>
+          <p class="font-semibold text-sm">Certificate Not Found / Certificado No Encontrado</p>
+        </div>
+        <p class="text-[11px]">
+          EN: The ID you entered is not in our system. Please check the number or contact the academy.<br/>
+          ES: El ID ingresado no aparece en nuestro sistema. Verifique el número o contacte a la academia.
+        </p>
+      </div>
+    `;
+  }
+});
+</script>
+
 </body>
 </html>
