@@ -5,84 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Schedule - Viconnect Fiber Academy</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0ea5e9 0, #020617 40%, #000 100%);
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-50">
+<body class="text-slate-50">
 
-<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/90 backdrop-blur">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-    <a href="index.html" class="flex items-center gap-3">
-      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/70">
-        VFA
-      </div>
-      <div>
-        <h1 class="font-semibold text-slate-50 text-lg leading-tight">Viconnect Fiber Academy</h1>
-        <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</p>
-      </div>
-    </a>
-
-    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
-      <a href="index.html" class="hover:text-sky-400">Home</a>
-      <a href="courses.html" class="hover:text-sky-400">Courses</a>
-      <a href="schedule.html" class="text-sky-400">Schedule</a>
-      <a href="verify.html" class="hover:text-sky-400">Verify</a>
-      <a href="contact.html" class="hover:text-sky-400">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="max-w-6xl mx-auto px-4 py-10">
-  <section class="max-w-xl space-y-4">
-    <h2 class="text-2xl font-bold">Schedule Hands-On Lab Day / Programar Día de Práctica</h2>
-
-    <p class="text-sm text-slate-300">
-      EN: After enrolling in a course, students must schedule their in-person lab date.<br />
-      ES: Después de inscribirse en un curso, los estudiantes deben programar la fecha de su laboratorio presencial.
-    </p>
-
-    <div class="border border-slate-800 rounded-xl p-4 bg-slate-900/60 text-xs text-slate-200 space-y-3">
-      <h3 class="font-semibold text-sm">Option 1 – Online Calendar / Calendario en Línea</h3>
-      <p>
-        EN: Later you can replace this button with your Calendly (or similar) link.<br />
-        ES: Más adelante puede reemplazar este botón con su enlace de Calendly (u otro).
-      </p>
-      <a href="#"
-         class="inline-flex px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-[11px] font-medium">
-        Book Lab Day / Reservar Día de Práctica
+  <!-- GLOBAL HEADER -->
+  <header class="sticky top-0 z-50 border-b border-sky-500/20 bg-slate-950/80 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-sky-500/20 border border-sky-400/50 flex items-center justify-center text-sm font-bold shadow-[0_0_20px_rgba(56,189,248,0.7)]">
+          VFA
+        </div>
+        <div>
+          <div class="font-semibold text-slate-50 text-base md:text-lg leading-tight">
+            Viconnect Fiber Academy
+          </div>
+          <div class="text-[11px] text-slate-400">
+            Hybrid Fiber Optic Training · Bilingual
+          </div>
+        </div>
       </a>
-    </div>
 
-    <div class="border border-slate-800 rounded-xl p-4 bg-slate-900/60 text-xs text-slate-200 space-y-2">
-      <h3 class="font-semibold text-sm">Option 2 – Email / Correo</h3>
-      <p>
-        EN: Students may request lab dates by email. Include full name, course selected, and preferred weekends.<br />
-        ES: Los estudiantes pueden solicitar fechas por correo electrónico. Incluir nombre completo,
-        curso seleccionado y fines de semana preferidos.
+      <nav class="hidden md:flex items-center gap-6 text-xs md:text-sm font-medium">
+        <a href="index.html" class="hover:text-sky-400">Home</a>
+        <a href="courses.html" class="hover:text-sky-400">Courses</a>
+        <a href="schedule.html" class="text-sky-400">Schedule</a>
+        <a href="verify.html" class="hover:text-sky-400">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+    <section class="max-w-xl">
+      <h1 class="text-2xl md:text-3xl font-bold mb-2">Schedule Hands-On Lab Day</h1>
+      <p class="text-sm text-slate-200 mb-4">
+        EN: After enrolling in a course, students must schedule their in-person lab day.<br />
+        ES: Después de inscribirse, los estudiantes deben programar su día de laboratorio presencial.
       </p>
-      <p class="text-[11px]">
-        Email:
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-6 text-xs md:text-sm">
+      <!-- Option 1 -->
+      <div class="border border-sky-500/30 rounded-xl p-5 bg-slate-950/70">
+        <h2 class="font-semibold text-sm mb-2 text-sky-300">
+          Option 1 – Online Calendar / Calendario en Línea
+        </h2>
+        <p class="text-slate-200 mb-2">
+          EN: Later you will replace this button with your real Calendly or booking link.<br />
+          ES: Más adelante reemplazará este botón con su enlace real de Calendly o reservación.
+        </p>
+        <a href="#" class="inline-flex mt-2 px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-[11px] font-medium text-slate-950">
+          Book Lab Day / Reservar Día de Práctica
+        </a>
+      </div>
+
+      <!-- Option 2 -->
+      <div class="border border-sky-500/30 rounded-xl p-5 bg-slate-950/70">
+        <h2 class="font-semibold text-sm mb-2 text-sky-300">
+          Option 2 – Email / Correo
+        </h2>
+        <p class="text-slate-200 mb-2">
+          EN: Students may also request lab dates by email. Include your full name, course, and preferred dates.<br />
+          ES: Los estudiantes también pueden solicitar fechas por correo. Incluya su nombre completo, curso y fechas preferidas.
+        </p>
+        <p class="text-[11px] text-slate-200">
+          Email: 
+          <a href="mailto:viconnectfiberacademy@gmail.com?subject=Lab%20Day%20Scheduling" class="text-sky-400">
+            viconnectfiberacademy@gmail.com
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-sky-500/20 mt-10 bg-slate-950/90">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+      <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
+      <div>Email: 
         <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
           viconnectfiberacademy@gmail.com
         </a>
-      </p>
+      </div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="border-t border-slate-800 mt-10">
-  <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-    <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
-    <div>
-      Email:
-      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
-        viconnectfiberacademy@gmail.com
-      </a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
