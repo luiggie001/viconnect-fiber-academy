@@ -2,105 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Viconnect Fiber Academy – Hybrid Fiber Optic Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viconnect Fiber Academy – Hybrid Fiber Optic Certifications</title>
+  <meta name="description" content="Hybrid bilingual fiber optic certifications – online theory plus one intensive hands-on lab day. Designed by a 20+ year field expert." />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-slate-950 text-slate-50">
 
-<body class="bg-slate-950 text-slate-200">
-
-  <!-- HEADER -->
-  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/80 backdrop-blur-lg">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-
+  <!-- HEADER (same on all pages) -->
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
       <a href="index.html" class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center
-                    font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/50">
+        <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/50">
           VFA
         </div>
         <div>
-          <h1 class="text-lg font-semibold text-slate-50">Viconnect Fiber Academy</h1>
-          <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</p>
+          <h1 class="text-base md:text-lg font-semibold leading-tight">Viconnect Fiber Academy</h1>
+          <p class="text-[11px] md:text-xs text-slate-400">
+            Hybrid Fiber Optic Training · Bilingual · Job-Ready
+          </p>
         </div>
       </a>
 
-      <nav class="hidden md:flex gap-6 text-sm font-semibold">
-        <a href="index.html" class="hover:text-sky-400 transition">Home</a>
-        <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
-        <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
-        <a href="verify.html" class="hover:text-sky-400 transition">Verify Certificate</a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-sky-400">Home</a>
+        <a href="courses.html" class="hover:text-sky-400">Certifications</a>
+        <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+        <a href="verify.html" class="hover:text-sky-400">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400">Contact</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden px-3 py-1.5 rounded-lg border border-slate-600 text-xs tracking-wide">
+        MENU
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="index.html" class="text-sky-400">Home</a>
+        <a href="courses.html" class="hover:text-sky-400">Certifications</a>
+        <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+        <a href="verify.html" class="hover:text-sky-400">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="max-w-4xl mx-auto px-4 py-10">
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
 
-    <h2 class="text-sky-300 text-sm tracking-wide">
-      FIBER OPTIC CAREER STARTER · CARRERA EN FIBRA ÓPTICA
-    </h2>
+    <section class="relative overflow-hidden rounded-2xl border border-sky-500/20 bg-gradient-to-br from-sky-900 via-slate-950 to-slate-950 px-5 md:px-8 py-8 md:py-10">
+      <div class="max-w-xl space-y-4">
+        <p class="text-[11px] tracking-[0.2em] uppercase text-sky-300">
+          Fiber Optic Career Starter · Carrera en Fibra Óptica
+        </p>
+        <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+          Hybrid Fiber Optic
+          <span class="text-sky-300">Certifications</span><br />
+          Designed by a 20+ Year Field Expert
+        </h2>
+        <p class="text-sm text-slate-100">
+          EN: Bilingual hybrid program – online theory + one intensive hands-on lab day,
+          built for real ISP, OSP and contractor work.
+        </p>
+        <p class="text-sm text-slate-300">
+          ES: Programa híbrido bilingüe – teoría en línea + un día intensivo de práctica,
+          diseñado para trabajo real con ISPs, OSP y contratistas.
+        </p>
 
-    <h1 class="text-4xl font-bold mt-2 text-slate-50">
-      Hybrid Fiber Optic Certifications
-    </h1>
-
-    <h2 class="text-3xl font-bold mt-1 text-sky-400">
-      Designed by a 20+ Year Field Expert
-    </h2>
-
-    <p class="mt-6 text-slate-300 leading-relaxed">
-      EN: Bilingual hybrid program – online theory + one intensive hands-on lab day, built for real ISP,
-      OSP and contractor work.
-    </p>
-
-    <p class="mt-4 text-slate-300 leading-relaxed">
-      ES: Programa híbrido bilingüe – teoría en línea + un día intensivo de práctica, diseñado para trabajo real
-      con ISPs, OSP y contratistas.
-    </p>
-
-    <div class="mt-8 flex flex-col md:flex-row gap-4">
-      <a href="courses.html"
-        class="bg-sky-600 hover:bg-sky-500 transition text-center text-slate-900 font-semibold py-3 rounded-xl">
-        View Certifications / Ver Certificaciones
-      </a>
-
-      <a href="schedule.html"
-        class="border border-sky-400 text-sky-300 hover:bg-sky-400/10 transition text-center font-semibold py-3 rounded-xl">
-        Book Lab Day / Reservar Día de Práctica
-      </a>
-    </div>
-
-    <!-- FEATURES GRID -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs mt-10">
-
-      <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-3">
-        <div class="font-semibold text-sky-300 mb-1">Hybrid / Híbrido</div>
-        <p class="text-slate-300">Online theory + live hands-on labs.</p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="courses.html" class="px-4 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-sm font-semibold">
+            View Certifications / Ver Certificaciones
+          </a>
+          <a href="schedule.html" class="px-4 py-2.5 rounded-lg border border-slate-500 hover:border-sky-400 text-sm font-semibold">
+            Book Lab Day / Reservar Día de Práctica
+          </a>
+        </div>
       </div>
 
-      <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-3">
-        <div class="font-semibold text-sky-300 mb-1">Bilingual / Bilingüe</div>
-        <p class="text-slate-300">English & Spanish in one program.</p>
+      <div class="mt-7 grid gap-3 md:grid-cols-3 text-sm">
+        <div class="rounded-xl border border-sky-500/30 bg-slate-950/40 p-4">
+          <p class="text-xs font-semibold text-sky-300 mb-1">Hybrid / Híbrido</p>
+          <p class="text-xs text-slate-200">
+            Online theory + live hands-on labs with real equipment.
+          </p>
+        </div>
+        <div class="rounded-xl border border-sky-500/30 bg-slate-950/40 p-4">
+          <p class="text-xs font-semibold text-sky-300 mb-1">Bilingual / Bilingüe</p>
+          <p class="text-xs text-slate-200">
+            English & Spanish in the same program and materials.
+          </p>
+        </div>
+        <div class="rounded-xl border border-sky-500/30 bg-slate-950/40 p-4">
+          <p class="text-xs font-semibold text-sky-300 mb-1">Job-Ready / Listo</p>
+          <p class="text-xs text-slate-200">
+            Built for ISPs, telecom, OSP & fiber contractors.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-3">
-        <div class="font-semibold text-sky-300 mb-1">Job-Ready / Listo</div>
-        <p class="text-slate-300">ISPs, telecom, OSP & contractors.</p>
+    <!-- QUICK HIGHLIGHTS -->
+    <section class="grid md:grid-cols-2 gap-6 text-sm">
+      <div class="border border-slate-800 rounded-2xl bg-slate-900/40 p-5 space-y-2">
+        <h3 class="text-base font-semibold text-sky-300">Who this is for / Para quién es</h3>
+        <ul class="list-disc list-inside text-xs text-slate-200 space-y-1.5">
+          <li>Technicians entering fiber for the first time.</li>
+          <li>Copper / coax technicians transitioning to fiber.</li>
+          <li>Contractors wanting structured, job-ready training.</li>
+          <li>Telecom teams needing bilingual training in PR & US.</li>
+        </ul>
       </div>
-
-      <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-3">
-        <div class="font-semibold text-sky-300 mb-1">Small Groups / Grupos Pequeños</div>
-        <p class="text-slate-300">More hands-on time with equipment.</p>
+      <div class="border border-slate-800 rounded-2xl bg-slate-900/40 p-5 space-y-2">
+        <h3 class="text-base font-semibold text-sky-300">What you get / Lo que recibes</h3>
+        <ul class="list-disc list-inside text-xs text-slate-200 space-y-1.5">
+          <li>Online theory modules (English & Spanish).</li>
+          <li>One intensive in-person hands-on lab day.</li>
+          <li>Printable VFA certificate per course completed.</li>
+          <li>Email & WhatsApp support for scheduling and questions.</li>
+        </ul>
       </div>
+    </section>
 
-    </div>
-
-  </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer class="mt-16 border-t border-slate-800 py-6 text-center text-[13px] text-slate-500">
-    © 2025 Viconnect Fiber Academy · Training for Fiber Careers
+  <footer class="border-t border-slate-800 mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-[11px] text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+      <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
+      <div class="space-x-2">
+        <span>Email:</span>
+        <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">viconnectfiberacademy@gmail.com</a>
+      </div>
+    </div>
   </footer>
 
+  <script>
+    // Year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  </script>
 </body>
 </html>
