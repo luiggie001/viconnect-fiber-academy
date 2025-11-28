@@ -3,65 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Certificates - Viconnect Fiber Academy</title>
+  <title>Certificate Info - Viconnect Fiber Academy</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-50">
 
-<header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
+<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/90 backdrop-blur">
   <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
     <a href="index.html" class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-400/60 flex items-center justify-center text-xs font-bold">
+      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/70">
         VFA
       </div>
       <div>
-        <div class="font-semibold text-slate-50 text-lg">Viconnect Fiber Academy</div>
-        <div class="text-xs text-slate-400">Hybrid Fiber Optic Training · Bilingual</div>
+        <h1 class="font-semibold text-slate-50 text-lg leading-tight">Viconnect Fiber Academy</h1>
+        <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</p>
       </div>
     </a>
 
-    <nav class="flex gap-4 text-sm font-semibold">
-      <a href="index.html" class="hover:text-emerald-400">Home</a>
-      <a href="courses.html" class="hover:text-emerald-400">Courses</a>
-      <a href="schedule.html" class="hover:text-emerald-400">Schedule</a>
-      <a href="verify.html" class="hover:text-emerald-400">Verify</a>
-      <a href="contact.html" class="hover:text-emerald-400">Contact</a>
+    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+      <a href="index.html" class="hover:text-sky-400">Home</a>
+      <a href="courses.html" class="hover:text-sky-400">Courses</a>
+      <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+      <a href="verify.html" class="hover:text-sky-400">Verify</a>
+      <a href="contact.html" class="hover:text-sky-400">Contact</a>
     </nav>
   </div>
 </header>
 
 <main class="max-w-6xl mx-auto px-4 py-10">
-  <section class="grid md:grid-cols-2 gap-10 items-start">
-    <div>
-      <h1 class="text-2xl font-bold mb-3">Certificates / Certificados</h1>
-      <p class="text-sm text-slate-300 mb-4">
-        EN: After successfully completing the online modules and hands-on lab, students receive a digital certificate
-        from Viconnect Fiber Academy.<br/>
-        ES: Después de completar los módulos en línea y el laboratorio presencial, los estudiantes reciben un
-        certificado digital de Viconnect Fiber Academy.
+  <section class="grid md:grid-cols-2 gap-8 items-start">
+    <div class="space-y-4 text-sm">
+      <h2 class="text-2xl font-bold">Certificate of Completion</h2>
+      <p class="text-slate-300">
+        EN: Students who successfully complete the online modules and hands-on lab day receive an official
+        Viconnect Fiber Academy Certificate of Completion for their course.<br />
+        ES: Los estudiantes que completan exitosamente los módulos en línea y el día de práctica reciben un
+        Certificado de Finalización oficial de Viconnect Fiber Academy para su curso.
       </p>
 
-      <ul class="list-disc list-inside text-sm text-slate-200 space-y-1 mb-4">
-        <li>Secure digital PDF certificate delivered by email.</li>
-        <li>Unique certificate ID for verification on the <a href="verify.html" class="text-emerald-400">Verify page</a>.</li>
-        <li>Bilingual English / Spanish wording available.</li>
+      <ul class="list-disc list-inside text-[13px] space-y-1 text-slate-300">
+        <li>Unique Certificate ID for verification.</li>
+        <li>Graduate name and course title.</li>
+        <li>Completion date and instructor signature.</li>
+        <li>English/Spanish bilingual certificate format.</li>
       </ul>
 
-      <p class="text-xs text-slate-400">
-        For employer or HR verification, please use the verification page or email
-        <a href="mailto:viconnectfiberacademy@gmail.com" class="text-emerald-400">
-          viconnectfiberacademy@gmail.com
-        </a>.
-      </p>
+      <a href="assets/certificate-preview.png" target="_blank"
+         class="inline-flex mt-3 px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-xs font-semibold">
+        View Sample Certificate / Ver Certificado de Muestra
+      </a>
     </div>
 
-    <div class="border border-slate-800 rounded-xl bg-slate-900/60 p-4">
-      <h2 class="text-sm font-semibold mb-3">Sample Certificate / Certificado de Muestra</h2>
-      <img src="assets/certificate-preview.png" alt="Sample Viconnect Fiber Academy Certificate"
-           class="w-full rounded-lg border border-slate-800">
+    <div class="border border-slate-800 rounded-2xl bg-slate-900/70 p-4">
+      <p class="text-xs text-slate-400 mb-2">Sample certificate layout (preview image):</p>
+      <img src="assets/certificate-preview.png" alt="Sample certificate preview"
+           class="w-full rounded-lg border border-slate-700">
     </div>
   </section>
 </main>
+
+<footer class="border-t border-slate-800 mt-10">
+  <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+    <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
+    <div>
+      Email:
+      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
+        viconnectfiberacademy@gmail.com
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
