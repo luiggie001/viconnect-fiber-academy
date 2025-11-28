@@ -11,7 +11,7 @@
 <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
   <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
     <a href="index.html" class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-lg bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-xs font-bold">
+      <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-400/60 flex items-center justify-center text-xs font-bold">
         VFA
       </div>
       <div>
@@ -20,72 +20,55 @@
       </div>
     </a>
 
-    <nav class="flex gap-4 text-sm">
-      <a href="index.html" class="hover:text-sky-400">Home</a>
-      <a href="courses.html" class="hover:text-sky-400">Courses</a>
-      <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
-      <a href="verify.html" class="hover:text-sky-400">Verify</a>
-      <a href="contact.html" class="hover:text-sky-400">Contact</a>
+    <nav class="flex gap-4 text-sm font-semibold">
+      <a href="index.html" class="hover:text-emerald-400">Home</a>
+      <a href="courses.html" class="hover:text-emerald-400">Courses</a>
+      <a href="schedule.html" class="hover:text-emerald-400">Schedule</a>
+      <a href="verify.html" class="hover:text-emerald-400">Verify</a>
+      <a href="contact.html" class="text-emerald-400">Contact</a>
     </nav>
   </div>
 </header>
 
 <main class="max-w-6xl mx-auto px-4 py-10">
-
-<section class="grid md:grid-cols-2 gap-10">
-
-  <div>
-    <h1 class="text-2xl font-bold mb-2">Contact / Contacto</h1>
-    <p class="text-sm text-slate-300 mb-4">
-      EN: Use this form to request quotes, private group training, or ask about certification programs.<br/>
-      ES: Use este formulario para solicitar cotizaciones, entrenamientos privados o preguntar sobre certificaciones.
-    </p>
-
-    <div class="text-xs text-slate-200 space-y-2 mb-6">
-      <p><span class="font-semibold text-sky-300">Email:</span>
-        <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
-          viconnectfiberacademy@gmail.com
-        </a>
+  <section class="grid md:grid-cols-2 gap-10">
+    <div>
+      <h1 class="text-2xl font-bold mb-3">Contact / Contacto</h1>
+      <p class="text-sm text-slate-300 mb-4">
+        EN: Use this information to request custom group training, corporate classes or ask questions.<br/>
+        ES: Use esta información para solicitar entrenamientos de grupo, clases corporativas o hacer preguntas.
       </p>
-      <p><span class="font-semibold text-sky-300">Languages / Idiomas:</span> English & Spanish</p>
+
+      <div class="space-y-3 text-sm text-slate-200">
+        <p><span class="font-semibold text-emerald-300">Email:</span>
+          <a href="mailto:viconnectfiberacademy@gmail.com" class="text-emerald-400">
+            viconnectfiberacademy@gmail.com
+          </a>
+        </p>
+        <p><span class="font-semibold text-emerald-300">Phone / WhatsApp:</span> (add your number here later)</p>
+        <p><span class="font-semibold text-emerald-300">Location:</span> Puerto Rico (available for on-site corporate labs).</p>
+      </div>
     </div>
-  </div>
 
-  <div>
-    <form class="border border-slate-800 rounded-xl p-4 bg-slate-900/60 text-xs text-slate-200 space-y-3">
-
-      <div>
-        <label class="block mb-1 text-[11px]">Name / Nombre</label>
-        <input type="text" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs"
-          placeholder="Your name / Su nombre" />
-      </div>
-
-      <div>
-        <label class="block mb-1 text-[11px]">Email</label>
-        <input type="email" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs"
-          placeholder="you@example.com" />
-      </div>
-
-      <div>
-        <label class="block mb-1 text-[11px]">Message / Mensaje</label>
-        <textarea class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs" rows="4"
-          placeholder="How can we help? / ¿Cómo podemos ayudarle?"></textarea>
-      </div>
-
-      <button type="button" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-[11px] font-medium">
-        Send (configure later) / Enviar (configurar luego)
-      </button>
-
-      <p class="text-[11px] text-slate-500">
-        EN: Later you can connect this form to Formspree or a simple email handler.<br/>
-        ES: Más adelante puede conectar este formulario a Formspree o un manejador de correo.
+    <div class="border border-slate-800 rounded-xl bg-slate-900/60 p-5 text-xs text-slate-200">
+      <h2 class="font-semibold mb-2">Quick Email Template / Plantilla Rápida</h2>
+      <p class="mb-2">
+        Copy and paste this text when sending an email.
       </p>
+      <pre class="whitespace-pre-wrap bg-slate-950/60 border border-slate-800 rounded-lg p-3 text-[11px]">
+EN:
+Hello Viconnect Fiber Academy,
+I am interested in your hybrid fiber optic training. Please send me more details about dates, pricing, and availability.
 
-    </form>
-  </div>
+ES:
+Hola Academia de Fibra Viconnect,
+Estoy interesado en su entrenamiento híbrido de fibra óptica. Por favor envíe más detalles sobre fechas, precios y disponibilidad.
 
-</section>
-
+Thank you / Gracias.
+      </pre>
+    </div>
+  </section>
 </main>
+
 </body>
 </html>
