@@ -5,101 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Verify Certificate - Viconnect Fiber Academy</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0ea5e9 0, #020617 40%, #000 100%);
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-50">
+<body class="text-slate-50">
 
-<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/90 backdrop-blur">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-    <a href="index.html" class="flex items-center gap-3">
-      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/70">
-        VFA
-      </div>
-      <div>
-        <h1 class="font-semibold text-slate-50 text-lg leading-tight">Viconnect Fiber Academy</h1>
-        <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</p>
-      </div>
-    </a>
-
-    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
-      <a href="index.html" class="hover:text-sky-400">Home</a>
-      <a href="courses.html" class="hover:text-sky-400">Courses</a>
-      <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
-      <a href="verify.html" class="text-sky-400">Verify</a>
-      <a href="contact.html" class="hover:text-sky-400">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="max-w-6xl mx-auto px-4 py-10">
-  <section class="max-w-md mx-auto border border-slate-800 rounded-xl bg-slate-900/70 p-6 space-y-4 text-sm">
-    <h2 class="text-xl font-bold mb-1">Certificate Verification / Verificación de Certificado</h2>
-    <p class="text-slate-300 text-[13px]">
-      EN: Employers and students can use this form to request manual verification of a Viconnect Fiber Academy
-      certificate.<br />
-      ES: Empleadores y estudiantes pueden usar este formulario para solicitar verificación manual de un certificado
-      de Viconnect Fiber Academy.
-    </p>
-
-    <form class="space-y-3">
-      <div>
-        <label class="block text-xs text-slate-400 mb-1">Certificate ID</label>
-        <input type="text" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs"
-               placeholder="e.g. VFA-FOT-2025-001" />
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div>
-          <label class="block text-xs text-slate-400 mb-1">Student First Name</label>
-          <input type="text" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs" />
+  <!-- GLOBAL HEADER -->
+  <header class="sticky top-0 z-50 border-b border-sky-500/20 bg-slate-950/80 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-sky-500/20 border border-sky-400/50 flex items-center justify-center text-sm font-bold shadow-[0_0_20px_rgba(56,189,248,0.7)]">
+          VFA
         </div>
         <div>
-          <label class="block text-xs text-slate-400 mb-1">Student Last Name</label>
-          <input type="text" class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs" />
+          <div class="font-semibold text-slate-50 text-base md:text-lg leading-tight">
+            Viconnect Fiber Academy
+          </div>
+          <div class="text-[11px] text-slate-400">
+            Hybrid Fiber Optic Training · Bilingual
+          </div>
         </div>
-      </div>
-
-      <div>
-        <label class="block text-xs text-slate-400 mb-1">Course</label>
-        <select class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs">
-          <option>Fiber Optic Technician (FOT)</option>
-          <option>Fiber Splicing Technician</option>
-          <option>OTDR Testing & Analysis</option>
-          <option>OSP Fiber Construction & Deployment</option>
-        </select>
-      </div>
-
-      <p class="text-[11px] text-slate-400">
-        EN: For now, please email the information above to
-        <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">viconnectfiberacademy@gmail.com</a>.
-        Online instant verification will be added soon.<br />
-        ES: Por ahora, envíe la información anterior por correo electrónico a
-        <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">viconnectfiberacademy@gmail.com</a>.
-        La verificación en línea se añadirá próximamente.
-      </p>
-
-      <button type="button"
-              class="w-full mt-1 rounded-lg bg-sky-600 hover:bg-sky-500 text-xs font-semibold py-2">
-        Copy details to clipboard (coming soon)
-      </button>
-    </form>
-  </section>
-</main>
-
-<footer class="border-t border-slate-800 mt-10">
-  <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-    <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
-    <div>
-      Email:
-      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
-        viconnectfiberacademy@gmail.com
       </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-xs md:text-sm font-medium">
+        <a href="index.html" class="hover:text-sky-400">Home</a>
+        <a href="courses.html" class="hover:text-sky-400">Courses</a>
+        <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+        <a href="verify.html" class="text-sky-400">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400">Contact</a>
+      </nav>
     </div>
-  </div>
-</footer>
+  </header>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+    <section class="max-w-xl">
+      <h1 class="text-2xl md:text-3xl font-bold mb-2">Verify Certificate</h1>
+      <p class="text-sm text-slate-200 mb-4">
+        EN: Enter the certificate ID printed on the student’s document.<br />
+        ES: Ingrese el ID de certificado que aparece en el documento del estudiante.
+      </p>
+    </section>
 
-</body>
-</html>
+    <section class="max-w-lg border border-sky-500/30 rounded-xl p-5 bg-slate-950/70 text-xs md:text-sm">
+      <form id="verifyForm" class="space-y-4">
+        <div>
+          <label for="code" class="block mb-1 font-semibold text-sky-300">
+            Certificate ID / ID de Certificado
+          </label>
+          <input
+            id="code"
+            type="text"
+            required
+            class="w-full rounded-md bg-slate-900 border border-sky-500/40 px-3 py-2 text-sm text-slate-50 focus:outline-none focus:ring-1 focus:ring-sky-400"
+            placeholder="Example: VFA-2025-0001"
+          />
+        </div>
+        <button
+          type="submit"
+          class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 font-semibold text-xs text-slate-950">
+          Verify / Verificar
+        </button>
+      </form>
+
+      <div id="result" class="mt-4 text-sm"></div>
+
+      <p class="mt-4 text-[11px] text-slate-400">
+        EN: This demo uses sample data only. Later you can replace it with your own list or database.<br />
+        ES: Esta demostración usa datos de ejemplo. Luego puede reemplazarlo con su propia lista o base de datos.
+      </p>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-sky-500/20 mt-10 bg-slate-950/90">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+      <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
+      <div>Email: 
+        <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
+          viconnectfiberacademy@gmail.com
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // SAMPLE DATA – replace later with real data
+    const sampleCertificates = {
+      "VFA-2025-0001": {
+        name: "Sample Student",
+        course: "Fiber Optic Technician (FOT)",
+        status: "Valid"
+      },
+      "VFA-2025-0002": {
+        name: "Sample Student 2",
+        course: "Fiber Splicing Technician",
+        status: "Valid"
+      }
+    };
+
+    const form = document.getElementById("verifyForm");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const code = document.getElementById("code").value.trim().toUpperCase();
+      const data = sampleCertificates[code];
+
+      if (data) {
+        result.innerHTML = `
+          <div class="border border-emerald-500/60 rounded-lg p-3 bg-emerald-900/30">
+            <p class="text-emerald-300 font-semibold mb-1">VALID / VÁL
