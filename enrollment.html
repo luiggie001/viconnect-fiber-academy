@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certification Enrollment / Matrícula de Certificación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-200">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/80 backdrop-blur-lg">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center
+                  font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/50">
+        VFA
+      </div>
+      <div>
+        <h1 class="text-lg font-semibold text-slate-50">Viconnect Fiber Academy</h1>
+        <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</p>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex gap-6 text-sm font-semibold">
+      <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+      <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
+      <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
+      <a href="verify.html" class="hover:text-sky-400 transition">Verify Certificate</a>
+      <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE TITLE -->
+<section class="max-w-4xl mx-auto px-4 py-10">
+  <h2 class="text-sky-300 text-sm tracking-wide uppercase">
+    Certification Enrollment · Matrícula de Certificación
+  </h2>
+
+  <h1 class="text-4xl font-bold text-slate-50 mt-2">
+    Enroll in a Fiber Certification
+  </h1>
+
+  <p class="mt-4 text-slate-300 leading-relaxed">
+    EN: Select the certification program you want to enroll in. You will be redirected to the contact page
+    with your course preselected, so you can complete your enrollment quickly.
+  </p>
+
+  <p class="mt-3 text-slate-300 leading-relaxed">
+    ES: Seleccione el programa de certificación al que desea inscribirse. Será redirigido a la página de contacto
+    con su curso preseleccionado para completar su matrícula rápidamente.
+  </p>
+</section>
+
+<!-- COURSE ENROLLMENT OPTIONS -->
+<section class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-6 pb-16">
+
+  <!-- FOT -->
+  <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-6">
+    <h3 class="text-xl font-bold text-sky-400">Fiber Optic Technician (FOT)</h3>
+    <p class="text-sm text-slate-300 mt-2">
+      EN: Foundational fiber certification.  
+      ES: Certificación fundamental en fibra.
+    </p>
+
+    <a href="contact.html?course=FOT"
+       class="block text-center mt-5 py-3 rounded-xl bg-sky-600 hover:bg-sky-500 
+              text-slate-900 font-semibold">
+      Enroll Now / Inscribirse Ahora
+    </a>
+  </div>
+
+  <!-- OSP -->
+  <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-6">
+    <h3 class="text-xl font-bold text-sky-400">OSP Construction & Deployment</h3>
+    <p class="text-sm text-slate-300 mt-2">
+      EN: Outside plant construction and deployment.  
+      ES: Construcción y despliegue OSP.
+    </p>
+
+    <a href="contact.html?course=OSP"
+       class="block text-center mt-5 py-3 rounded-xl bg-sky-600 hover:bg-sky-500 
+              text-slate-900 font-semibold">
+      Enroll Now / Inscribirse Ahora
+    </a>
+  </div>
+
+  <!-- OTDR -->
+  <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-6">
+    <h3 class="text-xl font-bold text-sky-400">OTDR Testing & Analysis</h3>
+    <p class="text-sm text-slate-300 mt-2">
+      EN: Optical Time Domain Reflectometer testing & analysis.  
+      ES: Pruebas y análisis OTDR.
+    </p>
+
+    <a href="contact.html?course=OTDR"
+       class="block text-center mt-5 py-3 rounded-xl bg-sky-600 hover:bg-sky-500 
+              text-slate-900 font-semibold">
+      Enroll Now / Inscribirse Ahora
+    </a>
+  </div>
+
+  <!-- Splicing -->
+  <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-6">
+    <h3 class="text-xl font-bold text-sky-400">Fiber Splicing Technician</h3>
+    <p class="text-sm text-slate-300 mt-2">
+      EN: Professional fiber splicing skills.  
+      ES: Habilidades profesionales de empalme.
+    </p>
+
+    <a href="contact.html?course=Splicing"
+       class="block text-center mt-5 py-3 rounded-xl bg-sky-600 hover:bg-sky-500 
+              text-slate-900 font-semibold">
+      Enroll Now / Inscribirse Ahora
+    </a>
+  </div>
+
+  <!-- MASTER -->
+  <div class="rounded-xl bg-slate-900/70 border border-slate-700 p-6 md:col-span-2">
+    <h3 class="text-2xl font-bold text-emerald-400">FULL Master Certification</h3>
+    <p class="text-sm text-slate-300 mt-2">
+      EN: Includes all certifications: FOT, Splicing, OTDR, and OSP.  
+      ES: Incluye todas las certificaciones: FOT, Empalme, OTDR y OSP.
+    </p>
+
+    <a href="contact.html?course=Master"
+       class="block text-center mt-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 
+              text-slate-900 font-bold">
+      Enroll Now / Inscribirse Ahora
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-10 border-t border-slate-800 py-6 text-center text-[13px] text-slate-500">
+  © 2025 Viconnect Fiber Academy · Training for Fiber Careers
+</footer>
+
+</body>
+</html>
