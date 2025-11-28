@@ -3,53 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viconnect Fiber Academy</title>
+  <title>Viconnect Fiber Academy – Hybrid Fiber Optic Certifications</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-50">
+
+<body class="bg-slate-950 text-white">
 
 <!-- HEADER -->
-<header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/90 backdrop-blur-lg">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-3">
-      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-lg border border-sky-300/50">
-        VFA
-      </div>
+      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/50">VFA</div>
       <div>
-        <h1 class="font-semibold text-slate-50 text-lg">Viconnect Fiber Academy</h1>
+        <h1 class="text-lg font-semibold text-slate-50">Viconnect Fiber Academy</h1>
         <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</p>
       </div>
     </a>
 
     <nav class="hidden md:flex gap-6 text-sm font-semibold">
-      <a href="index.html" class="hover:text-sky-400">Home</a>
-      <a href="courses.html" class="hover:text-sky-400">Courses</a>
-      <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
-      <a href="verify.html" class="hover:text-sky-400">Verify</a>
-      <a href="contact.html" class="hover:text-sky-400">Contact</a>
+      <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+      <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
+      <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
+      <a href="verify.html" class="hover:text-sky-400 transition">Verify</a>
+      <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
     </nav>
   </div>
 </header>
 
-<main class="max-w-6xl mx-auto px-4 py-10">
-  <h2 class="text-4xl font-extrabold mb-4">Hybrid Fiber Optic Certifications</h2>
-  <p class="text-lg text-slate-300 leading-relaxed mb-6">
-    EN: Bilingual hybrid program — online theory + one intensive hands-on lab day.<br>
-    ES: Programa híbrido bilingüe — teoría en línea + un día intensivo de práctica.
+<!-- HERO SECTION -->
+<section class="px-5 max-w-6xl mx-auto py-16">
+  <h2 class="text-4xl md:text-5xl font-extrabold text-sky-300 drop-shadow mt-6">
+    Hybrid Fiber Optic Certifications
+  </h2>
+  <h3 class="text-3xl md:text-4xl font-bold mt-3">
+    Designed by a 20+ Year Field Expert
+  </h3>
+
+  <p class="mt-4 text-slate-300 text-lg">
+    EN: Bilingual hybrid program – online theory + one intensive hands-on lab day, built for real ISP, OSP and contractor work.
   </p>
 
-  <a href="courses.html" class="block w-full text-center rounded-xl py-4 bg-sky-600 hover:bg-sky-500 font-semibold mb-4">
-    View Certifications / Ver Certificaciones
-  </a>
+  <p class="mt-2 text-slate-300 text-lg">
+    ES: Programa híbrido bilingüe – teoría en línea + un día intensivo de práctica, diseñado para trabajo real con ISPs, OSP y contratistas.
+  </p>
 
-  <a href="schedule.html" class="block w-full text-center rounded-xl py-4 border border-sky-600 hover:bg-sky-600/20 font-semibold">
-    Book Lab Day / Reservar Día de Práctica
-  </a>
-</main>
+  <div class="mt-8 flex flex-col sm:flex-row gap-4">
+    <a href="courses.html" class="bg-sky-600 hover:bg-sky-500 transition px-6 py-3 rounded-lg text-center font-bold">
+      View Certifications / Ver Certificaciones
+    </a>
+    <a href="schedule.html" class="border border-sky-400 px-6 py-3 rounded-lg text-center hover:bg-sky-400/20 transition font-bold">
+      Book Lab Day / Reservar Día de Práctica
+    </a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="max-w-6xl mx-auto px-5 grid gap-5 sm:grid-cols-3 py-10">
+  <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+    <h4 class="text-sky-300 font-bold text-lg">Hybrid / Híbrido</h4>
+    <p class="mt-2 text-slate-300">Online theory + live hands-on labs.</p>
+  </div>
+
+  <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+    <h4 class="text-sky-300 font-bold text-lg">Bilingual / Bilingüe</h4>
+    <p class="mt-2 text-slate-300">English & Spanish – one program.</p>
+  </div>
+
+  <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+    <h4 class="text-sky-300 font-bold text-lg">Job-Ready / Listo</h4>
+    <p class="mt-2 text-slate-300">ISPs, telecom, OSP & contractors.</p>
+  </div>
+</section>
 
 <!-- FOOTER -->
-<footer class="mt-16 py-8 border-t border-slate-800 text-center text-sm text-slate-400">
-  © 2025 Viconnect Fiber Academy — All Rights Reserved
+<footer class="bg-slate-900 border-t border-slate-800 mt-16 py-6">
+  <div class="max-w-6xl mx-auto px-4 text-center text-slate-400 text-sm">
+    <p>© 2025 Viconnect Fiber Academy · All rights reserved.</p>
+  </div>
 </footer>
+
 </body>
 </html>
