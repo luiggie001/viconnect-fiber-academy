@@ -1,84 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verify Certificate - Viconnect Fiber Academy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Certificate – Viconnect Fiber Academy</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="bg-slate-950 text-slate-50">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-50 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/70">
+          VFA
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold text-slate-50">Viconnect Fiber Academy</h1>
+          <p class="text-[11px] text-slate-400">
+            Hybrid Fiber Optic Training · Bilingual · Job-Ready
+          </p>
+        </div>
+      </a>
 
-<header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-    <a href="index.html" class="flex items-center gap-3">
-      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg border border-sky-300/50">
-        VFA
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-200">
+        <a href="index.html" class="hover:text-sky-400">Home</a>
+        <a href="courses.html" class="hover:text-sky-400">Courses</a>
+        <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+        <a href="verify.html" class="text-sky-400">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400">Contact</a>
+      </nav>
+
+      <button class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg border border-slate-700 text-slate-200 text-xs">
+        MENU
+      </button>
+    </div>
+  </header>
+
+  <main class="bg-slate-100 min-h-screen">
+    <section class="max-w-xl mx-auto px-4 py-10">
+      <header class="mb-6">
+        <p class="text-[11px] tracking-[0.18em] text-sky-600 uppercase font-semibold mb-2">
+          Certificate Verification / Verificación de Certificados
+        </p>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+          Verify a VFA Certificate
+        </h2>
+        <p class="text-sm text-slate-700">
+          EN: Enter the certificate ID printed on the student’s certificate.<br/>
+          ES: Escriba el ID de certificado que aparece en el certificado del estudiante.
+        </p>
+      </header>
+
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-5 text-sm">
+        <form
+          onsubmit="event.preventDefault(); verifyCertificate();"
+          class="space-y-3">
+          <div>
+            <label for="certId" class="block text-xs font-semibold text-slate-700 mb-1">
+              Certificate ID / ID de Certificado
+            </label>
+            <input
+              id="certId"
+              name="certId"
+              type="text"
+              placeholder="Example: VFA-2025-FOT-00123"
+              class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500" />
+          </div>
+          <button
+            type="submit"
+            class="w-full inline-flex justify-center px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-xs font-semibold text-slate-50">
+            Verify / Verificar
+          </button>
+        </form>
+
+        <div id="verifyResult" class="mt-4 text-xs"></div>
+
+        <div class="mt-5 border-t border-slate-200 pt-3 text-[11px] text-slate-600">
+          <p class="mb-1 font-semibold">Manual Verification / Verificación Manual</p>
+          <p>
+            EN: Employers may also email us a copy of the certificate to confirm authenticity.<br/>
+            ES: Empleadores también pueden enviarnos una copia del certificado por correo
+            electrónico para confirmar autenticidad.
+          </p>
+          <p class="mt-2">
+            Email:
+            <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-600">
+              viconnectfiberacademy@gmail.com
+            </a>
+          </p>
+        </div>
       </div>
-      <div>
-        <h1 class="font-semibold text-lg">Viconnect Fiber Academy</h1>
-        <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+      <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
+      <div class="flex flex-wrap items-center gap-3">
+        <span>Email:
+          <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
+            viconnectfiberacademy@gmail.com
+          </a>
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <a href="courses.html" class="text-sky-400 hover:text-sky-300">
+          View Courses
+        </a>
       </div>
-    </a>
+    </div>
+  </footer>
 
-    <nav class="hidden md:flex gap-6 text-sm font-semibold">
-      <a href="index.html" class="hover:text-sky-400">Home</a>
-      <a href="courses.html" class="hover:text-sky-400">Courses</a>
-      <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
-      <a href="verify.html" class="hover:text-sky-400">Verify</a>
-      <a href="contact.html" class="hover:text-sky-400">Contact</a>
-    </nav>
-  </div>
-</header>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-<main class="max-w-2xl mx-auto px-4 py-16">
+    // Simple demo verification: treat any non-empty ID as "Pending manual review"
+    function verifyCertificate() {
+      const certInput = document.getElementById('certId');
+      const result = document.getElementById('verifyResult');
+      const value = certInput.value.trim();
 
-  <h2 class="text-3xl font-semibold mb-4">Verify Certificate</h2>
-  <p class="text-slate-300 mb-8">
-    EN: Enter the certificate number from your printed PDF.<br>
-    ES: Ingrese el número del certificado de su PDF impreso.
-  </p>
+      if (!value) {
+        result.className = "mt-4 text-xs text-red-600";
+        result.textContent = "Please enter a certificate ID. / Por favor escriba un ID de certificado.";
+        return;
+      }
 
-  <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-6">
-    <label class="block text-sm font-medium mb-2">Certificate Number / Número de Certificado</label>
-    <input id="certInput" type="text"
-      class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 outline-none focus:border-sky-400"
-      placeholder="Example: VFA-2025-00123">
-    
-    <button onclick="verifyCert()"
-      class="w-full mt-4 bg-sky-600 hover:bg-sky-500 py-3 rounded-lg font-semibold">
-      Verify / Verificar
-    </button>
-
-    <p id="result" class="mt-4 text-center text-sm"></p>
-  </div>
-
-</main>
-
-<footer class="mt-16 py-8 border-t border-slate-800 text-center text-sm text-slate-400">
-  © 2025 Viconnect Fiber Academy
-</footer>
-
-<script>
-function verifyCert() {
-  let c = document.getElementById("certInput").value.trim();
-  let result = document.getElementById("result");
-
-  if (!c) {
-    result.textContent = "Enter a certificate number / Ingrese un número de certificado.";
-    result.className = "mt-4 text-center text-red-400";
-    return;
-  }
-
-  if (c.startsWith("VFA-")) {
-    result.textContent = "✔ VALID — Certificate exists in system.";
-    result.className = "mt-4 text-center text-green-400";
-  } else {
-    result.textContent = "✘ INVALID — Certificate not found.";
-    result.className = "mt-4 text-center text-red-400";
-  }
-}
-</script>
-
+      // Later you can replace this with a real API or lookup.
+      result.className = "mt-4 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2";
+      result.innerHTML = `
+        EN: Certificate ID <strong>${value}</strong> has been received and will be confirmed
+        by Viconnect Fiber Academy. Please allow 1–2 business days.<br/>
+        ES: El ID de certificado <strong>${value}</strong> ha sido recibido y será confirmado
+        por Viconnect Fiber Academy. Favor permitir 1–2 días laborables.
+      `;
+    }
+  </script>
 </body>
 </html>
