@@ -7,101 +7,135 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-50">
-
-  <!-- HEADER -->
-  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
+  <!-- Global Header -->
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/90 backdrop-blur">
     <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
       <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-400/60 flex items-center justify-center text-xs font-bold">
+        <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/70">
           VFA
         </div>
         <div>
-          <div class="font-semibold text-slate-50 text-lg">Viconnect Fiber Academy</div>
-          <div class="text-xs text-slate-400">Hybrid Fiber Optic Training · Bilingual</div>
+          <h1 class="font-semibold text-slate-50 text-lg leading-tight">Viconnect Fiber Academy</h1>
+          <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual (EN/ES)</p>
         </div>
       </a>
 
-      <nav class="flex gap-4 text-sm font-semibold">
-        <a href="index.html" class="text-emerald-400">Home</a>
-        <a href="courses.html" class="hover:text-emerald-400">Courses</a>
-        <a href="schedule.html" class="hover:text-emerald-400">Schedule</a>
-        <a href="verify.html" class="hover:text-emerald-400">Verify</a>
-        <a href="contact.html" class="hover:text-emerald-400">Contact</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="index.html" class="text-sky-400">Home</a>
+        <a href="courses.html" class="hover:text-sky-400">Courses</a>
+        <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+        <a href="verify.html" class="hover:text-sky-400">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400">Contact</a>
       </nav>
+
+      <!-- Mobile menu (simple) -->
+      <div class="md:hidden flex gap-3 text-xs">
+        <a href="courses.html" class="px-3 py-1 rounded-lg border border-slate-700 text-slate-200">Courses</a>
+        <a href="contact.html" class="px-3 py-1 rounded-lg bg-sky-600 text-slate-950 font-medium">Contact</a>
+      </div>
     </div>
   </header>
 
-  <!-- MAIN -->
-  <main class="max-w-6xl mx-auto px-4 py-10">
-
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
+    <!-- Hero -->
     <section class="grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-          Hybrid <span class="text-emerald-400">Fiber Optic Certification</span><br/>
-          by Industry Experts
-        </h1>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          Hybrid <span class="text-sky-400">Fiber Optic Certifications</span><br />
+          Designed by a 20+ Year Field Expert
+        </h2>
+
         <p class="text-sm text-slate-300 mb-3">
-          EN: Viconnect Fiber Academy offers bilingual hybrid training: online theory plus one intensive
-          hands-on lab day, designed by a fiber professional with 20+ years of field experience.
+          EN: Viconnect Fiber Academy delivers bilingual hybrid training—online theory plus one intensive hands-on
+          lab day—built by a fiber professional with more than 20 years of real-world experience.
         </p>
         <p class="text-sm text-slate-400 mb-6">
-          ES: La Academia de Fibra Viconnect ofrece entrenamiento híbrido bilingüe: teoría en línea más
-          un día intensivo de práctica presencial, diseñada por un profesional con más de 20 años de experiencia.
+          ES: La Academia de Fibra Viconnect ofrece entrenamiento híbrido bilingüe: teoría en línea más un día
+          intensivo de práctica presencial, diseñado por un profesional con más de 20 años de experiencia en el campo.
         </p>
 
         <div class="flex flex-wrap gap-3 mb-6">
-          <a href="courses.html" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-sm font-medium">
+          <a href="courses.html" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-sm font-medium">
             View Certifications / Ver Certificaciones
           </a>
-          <a href="contact.html" class="px-4 py-2 rounded-lg border border-slate-600 hover:border-emerald-400 text-sm">
+          <a href="contact.html" class="px-4 py-2 rounded-lg border border-slate-600 hover:border-sky-400 text-sm">
             Corporate Training / Entrenamiento Corporativo
           </a>
         </div>
 
-        <div class="grid grid-cols-3 gap-3 text-xs text-slate-300">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
           <div class="border border-slate-700 rounded-lg p-3">
-            <div class="font-semibold text-emerald-300 mb-1">Hybrid / Híbrido</div>
-            <div>Online theory + hands-on practice.</div>
+            <div class="font-semibold text-sky-300 mb-1">Hybrid / Híbrido</div>
+            <div>Online theory + in-person practice for real job skills.</div>
           </div>
           <div class="border border-slate-700 rounded-lg p-3">
-            <div class="font-semibold text-emerald-300 mb-1">Bilingual / Bilingüe</div>
-            <div>English & Spanish in one program.</div>
+            <div class="font-semibold text-sky-300 mb-1">Bilingual / Bilingüe</div>
+            <div>English & Spanish support in every program.</div>
           </div>
           <div class="border border-slate-700 rounded-lg p-3">
-            <div class="font-semibold text-emerald-300 mb-1">Job-Ready / Listo para Trabajo</div>
-            <div>ISPs, telecom, contractors & more.</div>
+            <div class="font-semibold text-sky-300 mb-1">Job-Ready / Listo para Trabajo</div>
+            <div>ISPs, telecom providers, contractors, and more.</div>
           </div>
         </div>
       </div>
 
       <div class="border border-slate-700 rounded-2xl p-5 bg-slate-900/60 text-xs text-slate-200">
-        <h2 class="text-lg font-semibold mb-2">Next Hybrid Certifications</h2>
+        <h3 class="text-lg font-semibold mb-2">Next Hybrid Certifications</h3>
         <ul class="space-y-1 mb-3">
           <li>• Fiber Optic Technician (FOT)</li>
-          <li>• Fiber Splicing Professional</li>
+          <li>• Fiber Splicing Technician</li>
           <li>• OTDR & Fiber Testing Certification</li>
-          <li>• OSP Fiber Installer</li>
+          <li>• OSP Fiber Construction & Deployment</li>
         </ul>
         <p class="text-slate-400 mb-3">
-          EN: Small groups for maximum hands-on time.<br/>
+          EN: Small groups for maximum hands-on time.<br />
           ES: Grupos pequeños para máximo tiempo de práctica.
         </p>
-        <a href="courses.html" class="inline-flex w-full justify-center px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-[13px] font-medium">
+        <a href="courses.html"
+           class="inline-flex w-full justify-center px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-[13px] font-medium">
           Enroll with PayPal / Inscribirse con PayPal
         </a>
         <p class="mt-3 text-[11px] text-slate-500">
-          Later you will replace the PayPal placeholders in <code>courses.html</code> with your real PayPal business buttons.
+          You’ll later replace PayPal placeholders on the Courses page with your live PayPal business buttons.
         </p>
       </div>
     </section>
 
+    <!-- Highlights -->
+    <section class="grid md:grid-cols-3 gap-5 text-xs">
+      <div class="border border-slate-800 rounded-xl p-4 bg-slate-900/60">
+        <h3 class="font-semibold text-sky-300 mb-1">Who is this for?</h3>
+        <p class="text-slate-300">
+          EN: Technicians, contractors, ISPs, telecom, and career-changers.<br />
+          ES: Técnicos, contratistas, ISP, telecomunicaciones y personas en transición de carrera.
+        </p>
+      </div>
+      <div class="border border-slate-800 rounded-xl p-4 bg-slate-900/60">
+        <h3 class="font-semibold text-sky-300 mb-1">Format</h3>
+        <p class="text-slate-300">
+          EN: Online modules + 1 intensive lab day.<br />
+          ES: Módulos en línea + 1 día intensivo de laboratorio.
+        </p>
+      </div>
+      <div class="border border-slate-800 rounded-xl p-4 bg-slate-900/60">
+        <h3 class="font-semibold text-sky-300 mb-1">Location</h3>
+        <p class="text-slate-300">
+          EN/ES: Lab locations in Puerto Rico and partner sites (contact us for dates and private groups).
+        </p>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- Global Footer -->
   <footer class="border-t border-slate-800 mt-10">
     <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
       <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
-      <div>Email: <a href="mailto:viconnectfiberacademy@gmail.com" class="text-emerald-400">viconnectfiberacademy@gmail.com</a></div>
+      <div>
+        Email:
+        <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
+          viconnectfiberacademy@gmail.com
+        </a>
+      </div>
     </div>
   </footer>
 
