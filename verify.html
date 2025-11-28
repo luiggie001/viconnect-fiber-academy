@@ -6,6 +6,7 @@
   <title>Verify Certificate - Viconnect Fiber Academy</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-slate-950 text-slate-50">
 
 <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
@@ -24,136 +25,79 @@
       <a href="index.html" class="hover:text-sky-400">Home</a>
       <a href="courses.html" class="hover:text-sky-400">Courses</a>
       <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
-      <a href="verify.html" class="hover:text-sky-400 text-sky-400 font-semibold">Verify</a>
+      <a href="certificate.html" class="hover:text-sky-400">Certificates</a>
+      <a href="verify.html" class="text-sky-400">Verify Certificate</a>
       <a href="contact.html" class="hover:text-sky-400">Contact</a>
     </nav>
   </div>
 </header>
 
-<main class="max-w-6xl mx-auto px-4 py-10">
+<main class="max-w-6xl mx-auto px-4 py-12">
 
-  <section class="max-w-xl">
-    <h1 class="text-2xl font-bold mb-2">Certificate Verification / Verificación de Certificado</h1>
-    <p class="text-sm text-slate-300 mb-4">
-      EN: Enter the Certificate ID shown on the document to verify that it was issued by Viconnect Fiber Academy.<br/>
-      ES: Ingrese el ID de Certificado que aparece en el documento para verificar que fue emitido por Viconnect Fiber Academy.
-    </p>
+  <h1 class="text-3xl font-bold mb-3">Verify Student Certificate</h1>
+  <p class="text-sm text-slate-300 mb-6">
+    Enter the certificate ID to confirm authenticity.
+    <br>
+    Ingrese el ID del certificado para confirmar su autenticidad.
+  </p>
 
-    <!-- Form -->
-    <div class="border border-slate-800 rounded-xl p-4 bg-slate-900/60 text-xs text-slate-200 space-y-3">
-      <div>
-        <label class="block mb-1 text-[11px]">Certificate ID / ID de Certificado</label>
-        <input id="certInput" type="text"
-               class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-xs"
-               placeholder="Example: VFA-FOT-00001" />
-      </div>
-      <button id="checkBtn"
-              class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-[11px] font-medium">
-        Check Certificate / Verificar Certificado
-      </button>
-      <p class="text-[11px] text-slate-500">
-        Tip: Certificate IDs follow this format: VFA-FOT-XXXXX, VFA-SPL-XXXXX, VFA-OTDR-XXXXX, VFA-OSP-XXXXX.
-      </p>
-    </div>
+  <div class="border border-slate-800 bg-slate-900/60 rounded-xl p-6 max-w-lg">
+    
+    <label class="block text-sm mb-2 text-slate-300 font-semibold">Certificate ID</label>
+    <input id="certID" type="text" placeholder="Ex: VFA-2024-00123"
+           class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-sm outline-none focus:border-sky-400">
 
-    <!-- Result -->
-    <div id="result" class="mt-6 hidden">
-      <!-- Filled by JavaScript -->
-    </div>
+    <button onclick="verifyCertificate()" 
+            class="w-full mt-4 px-4 py-2 bg-sky-600 hover:bg-sky-500 rounded-lg text-sm font-semibold">
+      Verify / Verificar
+    </button>
 
-    <p class="mt-8 text-[11px] text-slate-500">
-      EN: If you believe a certificate has been altered or is not listed, please contact
-      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
-        viconnectfiberacademy@gmail.com
-      </a>.<br/>
-      ES: Si usted cree que un certificado ha sido alterado o no aparece en el sistema, por favor escriba a
-      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400">
-        viconnectfiberacademy@gmail.com
-      </a>.
-    </p>
-  </section>
+    <!-- RESULT BOX -->
+    <div id="result" class="mt-6 hidden p-4 rounded-lg border"></div>
+
+  </div>
 
 </main>
 
 <script>
-// ---------------------------------------------
-// Simple in-page database of valid certificates
-// ---------------------------------------------
-//
-// Add new certificates here when you issue them.
-// Example structure:
-// {
-//   id: "VFA-FOT-00001",
-//   name: "John Doe",
-//   course: "Fiber Optic Technician (FOT)",
-//   date: "2025-01-15"
-// }
-
-const certificates = [
-  // SAMPLE ENTRIES – change or delete these when you start issuing real certs
-  {
-    id: "VFA-FOT-00001",
-    name: "Sample Student",
+// SAMPLE DATABASE FOR NOW — YOU CAN EXPAND ANYTIME
+const certificates = {
+  "VFA-2024-001": {
+    name: "Angel Rodriguez",
     course: "Fiber Optic Technician (FOT)",
-    date: "2025-01-15"
+    date: "Jan 2024"
   },
-  {
-    id: "VFA-SPL-00001",
-    name: "Sample Student",
-    course: "Fiber Splicing Professional",
-    date: "2025-01-20"
+  "VFA-2024-002": {
+    name: "John Doe",
+    course: "Fiber Splicing Technician",
+    date: "Feb 2024"
   }
-];
+};
 
-// -----------------------------
-// Verification handler
-// -----------------------------
-const input = document.getElementById("certInput");
-const button = document.getElementById("checkBtn");
-const result = document.getElementById("result");
+function verifyCertificate() {
+  const id = document.getElementById("certID").value.trim();
+  const result = document.getElementById("result");
 
-button.addEventListener("click", () => {
-  const value = input.value.trim().toUpperCase();
-  if (!value) return;
-
-  const cert = certificates.find(c => c.id === value);
+  if (certificates[id]) {
+    const data = certificates[id];
+    result.innerHTML = `
+      <p class="font-bold text-emerald-400 text-lg mb-2">✔ Valid Certificate</p>
+      <p><strong>Student:</strong> ${data.name}</p>
+      <p><strong>Course:</strong> ${data.course}</p>
+      <p><strong>Completion:</strong> ${data.date}</p>
+      <p class="mt-2 text-slate-400 text-xs">Viconnect Fiber Academy</p>
+    `;
+    result.className = "mt-6 p-4 rounded-lg border border-emerald-500 bg-emerald-500/10";
+  } else {
+    result.innerHTML = `
+      <p class="font-bold text-red-400 text-lg mb-2">✘ Certificate NOT found</p>
+      <p class="text-sm text-slate-300">Please check the ID and try again.</p>
+    `;
+    result.className = "mt-6 p-4 rounded-lg border border-red-500 bg-red-500/10";
+  }
 
   result.classList.remove("hidden");
-
-  if (cert) {
-    // Valid certificate
-    result.innerHTML = `
-      <div class="border border-emerald-600 bg-emerald-900/40 rounded-xl p-4 text-xs text-emerald-50">
-        <div class="flex items-center gap-2 mb-2">
-          <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
-          <p class="font-semibold text-sm">Certificate Found / Certificado Válido</p>
-        </div>
-        <p><span class="font-semibold">Name / Nombre:</span> ${cert.name}</p>
-        <p><span class="font-semibold">Course / Curso:</span> ${cert.course}</p>
-        <p><span class="font-semibold">Certificate ID:</span> ${cert.id}</p>
-        <p><span class="font-semibold">Date Issued / Fecha de Emisión:</span> ${cert.date}</p>
-        <p class="mt-2 text-[11px] text-emerald-200">
-          EN: This certificate was issued by Viconnect Fiber Academy.<br/>
-          ES: Este certificado fue emitido por Viconnect Fiber Academy.
-        </p>
-      </div>
-    `;
-  } else {
-    // Invalid certificate
-    result.innerHTML = `
-      <div class="border border-rose-600 bg-rose-900/40 rounded-xl p-4 text-xs text-rose-50">
-        <div class="flex items-center gap-2 mb-2">
-          <div class="w-2 h-2 rounded-full bg-rose-400"></div>
-          <p class="font-semibold text-sm">Certificate Not Found / Certificado No Encontrado</p>
-        </div>
-        <p class="text-[11px]">
-          EN: The ID you entered is not in our system. Please check the number or contact the academy.<br/>
-          ES: El ID ingresado no aparece en nuestro sistema. Verifique el número o contacte a la academia.
-        </p>
-      </div>
-    `;
-  }
-});
+}
 </script>
 
 </body>
