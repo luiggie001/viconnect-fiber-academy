@@ -1,267 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact · Viconnect Fiber Academy</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Viconnect Fiber Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-50">
 
-<!-- HEADER -->
-<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/90 backdrop-blur">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-    <a href="index.html" class="flex items-center gap-3">
-      <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/60">
-        VFA
-      </div>
-      <div>
-        <div class="font-semibold text-slate-50 text-lg">Viconnect Fiber Academy</div>
-        <div class="text-xs text-slate-400">Hybrid Fiber Optic Training · Bilingual · Job-Ready</div>
-      </div>
-    </a>
+<body class="bg-slate-900 text-slate-100">
 
-    <!-- Desktop nav -->
-    <nav class="hidden md:flex gap-6 text-sm font-semibold">
-      <a href="index.html" class="hover:text-sky-400 transition">Home</a>
-      <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
-      <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
-      <a href="enrollment.html" class="hover:text-sky-400 transition">Enrollment</a>
-      <a href="verify.html" class="hover:text-sky-400 transition">Verify Certificate</a>
-      <a href="contact.html" class="text-sky-400">Contact</a>
-    </nav>
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 border-b border-slate-700 bg-slate-900/80 backdrop-blur">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-sky-500 flex items-center justify-center font-bold text-lg">VFA</div>
+                <div>
+                    <h1 class="text-lg font-semibold">Viconnect Fiber Academy</h1>
+                    <p class="text-[11px] text-slate-300">Hybrid Fiber Optic Training · Bilingual</p>
+                </div>
+            </a>
 
-    <!-- Mobile menu button -->
-    <button id="menu-btn" class="md:hidden inline-flex items-center rounded-lg border border-slate-700 px-3 py-1 text-xs font-semibold tracking-wide hover:border-sky-400 hover:text-sky-400 transition">
-      MENU
-    </button>
-  </div>
+            <button class="md:hidden px-3 py-1 border rounded" onclick="toggleMenu()">MENU</button>
 
-  <!-- Mobile nav -->
-  <div id="mobile-menu" class="md:hidden border-t border-slate-800 bg-slate-950/95 hidden">
-    <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
-      <a href="index.html" class="hover:text-sky-400 transition">Home</a>
-      <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
-      <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
-      <a href="enrollment.html" class="hover:text-sky-400 transition">Enrollment</a>
-      <a href="verify.html" class="hover:text-sky-400 transition">Verify Certificate</a>
-      <a href="contact.html" class="text-sky-400">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
-
-  <!-- HERO -->
-  <section class="space-y-4">
-    <p class="text-[11px] tracking-[0.22em] uppercase text-sky-400">
-      Contact · Contacto
-    </p>
-    <h1 class="text-3xl md:text-4xl font-bold leading-tight">
-      Contact Viconnect Fiber Academy
-    </h1>
-    <p class="text-sm text-slate-200 max-w-2xl">
-      <span class="font-semibold">EN:</span> Use the form or email below for questions about courses, enrollment, corporate training or lab scheduling.<br/>
-      <span class="font-semibold">ES:</span> Use el formulario o correo electrónico para preguntas sobre cursos, matrícula, entrenamiento corporativo o programación de laboratorios.
-    </p>
-
-    <div class="mt-2 text-sm text-slate-200">
-      <span class="font-semibold">Email:</span>
-      <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400 hover:text-sky-300">
-        viconnectfiberacademy@gmail.com
-      </a>
-      <div class="text-[11px] text-slate-400 mt-1">
-        EN: Please allow 1–2 business days for a response. ·
-        ES: Favor permitir 1–2 días laborables para respuesta.
-      </div>
-    </div>
-  </section>
-
-  <!-- FORM -->
-  <section class="grid md:grid-cols-[minmax(0,3fr)] gap-6">
-    <div class="border border-slate-800 rounded-2xl bg-slate-900/70 p-5 md:p-6 space-y-5 shadow-lg shadow-sky-500/10">
-      <!-- Selected course badge -->
-      <div class="rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3 py-2 text-xs text-emerald-100 flex flex-col gap-1">
-        <div class="font-semibold tracking-[0.16em] uppercase">
-          Selected Enrollment / Matrícula seleccionada
+            <nav id="menu" class="hidden md:flex gap-6 text-sm">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="courses.html" class="hover:text-sky-400">Certifications</a>
+                <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+                <a href="enrollment.html" class="hover:text-sky-400">Enroll</a>
+                <a href="verify.html" class="hover:text-sky-400">Verify</a>
+                <a href="contact.html" class="text-sky-400 font-bold">Contact</a>
+            </nav>
         </div>
-        <div class="text-sm">
-          <span id="selected-course-label" class="font-medium text-emerald-200">
-            General question / Pregunta general
-          </span>
-        </div>
-        <p class="text-[11px] text-emerald-100/80">
-          This updates automatically when you come from the enrollment page.  
-          Change the topic below if you need a different certification.
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- PAGE CONTENT -->
+    <section class="max-w-4xl mx-auto px-4 py-10">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact Viconnect Fiber Academy</h2>
+
+        <p class="mb-2">
+            <strong>EN:</strong> Use the form below for questions about courses, enrollment, corporate training, or lab scheduling.
         </p>
-      </div>
+        <p class="mb-6">
+            <strong>ES:</strong> Use el formulario para preguntas sobre cursos, matrícula, entrenamiento corporativo o programación de laboratorios.
+        </p>
 
-      <form id="contact-form" class="space-y-4">
-        <!-- Name -->
-        <div class="space-y-1">
-          <label for="name" class="text-xs font-semibold tracking-[0.16em] uppercase text-slate-300">
-            Name / Nombre
-          </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            required
-            class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-slate-50 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500"
-            placeholder="Your full name / Su nombre completo" />
-        </div>
+        <p class="mb-6">
+            <strong>Email:</strong>
+            <a href="mailto:viconnectfiberacademy@gmail.com" class="text-sky-400 hover:underline">
+                viconnectfiberacademy@gmail.com
+            </a>
+        </p>
 
-        <!-- Email -->
-        <div class="space-y-1">
-          <label for="email" class="text-xs font-semibold tracking-[0.16em] uppercase text-slate-300">
-            Email
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-slate-50 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500"
-            placeholder="you@example.com" />
-        </div>
+        <!-- CONTACT FORM -->
+        <form
+            action="https://formsubmit.co/viconnectfiberacademy@gmail.com"
+            method="POST"
+            class="bg-slate-800 border border-slate-700 rounded-xl p-6 space-y-5"
+        >
+            <!-- FormSubmit Settings -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New VFA Contact Form Submission">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://luiggie001.github.io/viconnect-fiber-academy/success.html">
 
-        <!-- Topic -->
-        <div class="space-y-1">
-          <label for="topic" class="text-xs font-semibold tracking-[0.16em] uppercase text-slate-300">
-            Topic / Tema
-          </label>
-          <select
-            id="topic"
-            name="topic"
-            class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-slate-50 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500">
-            <option value="">General question / Pregunta general</option>
-            <option value="master">Enrollment – Full Master Curriculum</option>
-            <option value="fot">Enrollment – Fiber Optic Technician (FOT)</option>
-            <option value="osp">Enrollment – OSP Construction &amp; Deployment</option>
-            <option value="otdr">Enrollment – OTDR Testing &amp; Analysis</option>
-            <option value="splicing">Enrollment – Fiber Splicing Technician</option>
-            <option value="other">Other / Otro</option>
-          </select>
-        </div>
+            <!-- Auto-response -->
+            <input type="hidden" name="_autoresponse" value="Thank you for contacting Viconnect Fiber Academy! We will respond within 1-2 business days.">
 
-        <!-- Message -->
-        <div class="space-y-1">
-          <label for="message" class="text-xs font-semibold tracking-[0.16em] uppercase text-slate-300">
-            Message / Mensaje
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            required
-            class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-slate-50 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500"
-            placeholder="How can we help you? / ¿Cómo podemos ayudarle?"></textarea>
-        </div>
+            <!-- Name -->
+            <div>
+                <label class="text-sm">Name / Nombre</label>
+                <input type="text" name="Name" required
+                       class="w-full mt-1 p-3 rounded bg-slate-900 border border-slate-700 focus:border-sky-500">
+            </div>
 
-        <!-- Submit -->
-        <div class="pt-2 flex flex-col sm:flex-row sm:items-center gap-3">
-          <button
-            type="submit"
-            class="inline-flex justify-center items-center px-4 py-2.5 rounded-xl text-sm font-semibold bg-sky-500 hover:bg-sky-400 text-slate-950 shadow-lg shadow-sky-500/30 transition">
-            Send Message / Enviar mensaje
-          </button>
-          <p class="text-[11px] text-slate-400">
-            This will open your email app with the message pre-filled to
-            <span class="font-semibold">viconnectfiberacademy@gmail.com</span>.
-          </p>
-        </div>
-      </form>
-    </div>
-  </section>
+            <!-- Email -->
+            <div>
+                <label class="text-sm">Email</label>
+                <input type="email" name="Email" required
+                       class="w-full mt-1 p-3 rounded bg-slate-900 border border-slate-700 focus:border-sky-500">
+            </div>
 
-</main>
+            <!-- Topic -->
+            <div>
+                <label class="text-sm">Topic / Tema</label>
+                <select name="Topic" id="topicSelect"
+                        class="w-full mt-1 p-3 rounded bg-slate-900 border border-slate-700 focus:border-sky-500">
+                    <option>General question</option>
+                    <option>Enrollment – Fiber Optic Technician (FOT)</option>
+                    <option>Enrollment – OSP Construction</option>
+                    <option>Enrollment – OTDR Testing</option>
+                    <option>Enrollment – Fiber Splicing</option>
+                </select>
+            </div>
 
-<!-- FOOTER -->
-<footer class="border-t border-slate-800 bg-slate-950/90 mt-10">
-  <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs text-slate-400">
-    <div>
-      © <span id="year"></span> Viconnect Fiber Academy. All rights reserved.
-    </div>
-    <div class="flex flex-wrap gap-3">
-      <span>Hybrid · Bilingual · Job-Ready Fiber Training</span>
-    </div>
-  </div>
-</footer>
+            <!-- Message -->
+            <div>
+                <label class="text-sm">Message / Mensaje</label>
+                <textarea name="Message" rows="5" required
+                          class="w-full mt-1 p-3 rounded bg-slate-900 border border-slate-700 focus:border-sky-500"></textarea>
+            </div>
 
-<script>
-  // Mobile menu toggle
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  }
-
-  // Year in footer
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Auto-select topic from ?course=...
-  (function () {
-    const params = new URLSearchParams(window.location.search);
-    const course = params.get('course');
-
-    const courseMap = {
-      master: 'Enrollment – Full Master Curriculum',
-      fot: 'Enrollment – Fiber Optic Technician (FOT)',
-      osp: 'Enrollment – OSP Construction & Deployment',
-      otdr: 'Enrollment – OTDR Testing & Analysis',
-      splicing: 'Enrollment – Fiber Splicing Technician'
-    };
-
-    const topicSelect = document.getElementById('topic');
-    const labelSpan = document.getElementById('selected-course-label');
-
-    if (course && courseMap[course] && topicSelect) {
-      topicSelect.value = course;
-      if (labelSpan) {
-        labelSpan.textContent = courseMap[course];
-      }
-    }
-
-    // Handle submit via mailto:
-    const form = document.getElementById('contact-form');
-    if (!form) return;
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const topicValue = topicSelect.value;
-      const message = document.getElementById('message').value.trim();
-
-      if (!name || !email || !message) {
-        alert('Please complete all required fields / Favor complete todos los campos requeridos.');
-        return;
-      }
-
-      const topicText = topicValue && courseMap[topicValue]
-        ? courseMap[topicValue]
-        : (topicValue === 'other'
-          ? 'Other / Otro'
-          : 'General question / Pregunta general');
-
-      const subject = encodeURIComponent('VFA Contact – ' + topicText);
-      const bodyLines = [
-        'Name / Nombre: ' + name,
-        'Email: ' + email,
-        'Topic / Tema: ' + topicText,
-        '',
-        'Message / Mensaje:',
-        message
-      ];
-      const body = encodeURIComponent(bodyLines.join('\n'));
-
-      window.location.href = 'mailto:viconnectfiberacademy@gmail.com?subject=' + subject + '&body=' + body;
-    });
-  })();
-</script>
+            <!-- Submit -->
+            <button type="submit"
+                    class="w-full bg-sky-600 hover:bg-sky-700 py-3 rounded-lg font-semibold text-white">
+                Send Message / Enviar Mensaje
+            </button>
+        </form>
+    </section>
 
 </body>
 </html>
