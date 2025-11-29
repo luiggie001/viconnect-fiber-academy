@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuition & Payments – Viconnect Fiber Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-50">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-sky-600 text-slate-900 flex items-center justify-center font-bold text-lg shadow-sky-500/30 shadow-lg border border-sky-300/60">
+          VFA
+        </div>
+        <div>
+          <div class="font-semibold text-slate-50 text-lg">Viconnect Fiber Academy</div>
+          <div class="text-xs text-slate-400">Hybrid Fiber Optic Training · Bilingual · Job-Ready</div>
+        </div>
+      </a>
+
+      <button id="menu-btn" class="md:hidden inline-flex items-center rounded-lg border border-slate-700 px-3 py-1 text-xs font-semibold tracking-wide hover:border-sky-400 hover:text-sky-400 transition">
+        MENU
+      </button>
+
+      <nav class="hidden md:flex gap-6 text-sm font-semibold">
+        <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+        <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
+        <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
+        <a href="enrollment.html" class="hover:text-sky-400 transition">Enrollment</a>
+        <a href="payment.html" class="text-sky-400">Payments</a>
+        <a href="verify.html" class="hover:text-sky-400 transition">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobile-menu" class="md:hidden border-t border-slate-800 bg-slate-950/95 hidden">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
+        <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+        <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
+        <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
+        <a href="enrollment.html" class="hover:text-sky-400 transition">Enrollment</a>
+        <a href="payment.html" class="text-sky-400">Payments</a>
+        <a href="verify.html" class="hover:text-sky-400 transition">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+
+    <!-- INTRO -->
+    <section class="space-y-4">
+      <p class="text-[11px] tracking-[0.22em] uppercase text-sky-400">
+        Tuition & Payments · Matrícula y Pagos
+      </p>
+      <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+        Secure Online Payments with PayPal (USD)
+      </h1>
+      <p class="text-sm text-slate-200 max-w-2xl">
+        <span class="font-semibold">EN:</span> Select your certification and pay securely with PayPal. After payment,
+        you will receive a PayPal receipt and we will contact you by email to finish your enrollment and schedule your lab day.
+      </p>
+      <p class="text-sm text-slate-200 max-w-2xl">
+        <span class="font-semibold">ES:</span> Seleccione su certificación y pague de forma segura con PayPal. Después del pago,
+        recibirá un recibo de PayPal y le contactaremos por correo electrónico para completar su matrícula y programar su día de laboratorio.
+      </p>
+      <div class="text-xs text-slate-400">
+        All prices in <span class="font-semibold text-sky-300">USD ($)</span>.
+      </div>
+    </section>
+
+    <!-- MASTER BUNDLE -->
+    <section class="border border-emerald-500/40 rounded-2xl bg-emerald-500/10 p-5 md:p-6 space-y-3 shadow-lg shadow-emerald-500/20">
+      <p class="text-[11px] tracking-[0.22em] uppercase text-emerald-300">
+        Best value · Mejor valor
+      </p>
+      <h2 class="text-2xl font-bold text-emerald-100">
+        Master Curriculum – All Courses
+      </h2>
+      <p class="text-sm text-emerald-100/90">
+        Includes FOT, OSP Construction, OTDR Testing & Fiber Splicing Technician.
+      </p>
+      <div class="text-3xl font-bold text-emerald-300">
+        $899 <span class="text-sm font-normal text-emerald-200">USD</span>
+      </div>
+
+      <a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Luiggievite%40outlook.com&item_name=Master%20Curriculum%20-%20All%20Courses&amount=899.00&currency_code=USD&return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fsuccess.html&cancel_return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fpayment.html"
+        class="inline-flex justify-center items-center mt-3 px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm shadow-lg shadow-emerald-500/40 transition"
+      >
+        Pay $899 with PayPal
+      </a>
+
+      <p class="text-[11px] text-emerald-100/80">
+        After payment, check your email (including spam folder) for confirmation.
+      </p>
+    </section>
+
+    <!-- INDIVIDUAL COURSES -->
+    <section class="grid gap-5 md:grid-cols-2">
+
+      <!-- FOT -->
+      <article class="border border-slate-800 rounded-2xl bg-slate-900/70 p-5 space-y-3">
+        <h3 class="text-lg font-semibold text-sky-200">Fiber Optic Technician (FOT)</h3>
+        <p class="text-sm text-slate-200">
+          Entry-level hybrid certification for fiber techs – theory + hands-on.
+        </p>
+        <div class="text-2xl font-bold text-slate-50">
+          $199 <span class="text-xs font-normal text-slate-400">USD</span>
+        </div>
+        <a
+          href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Luiggievite%40outlook.com&item_name=Fiber%20Optic%20Technician%20(FOT)&amount=199.00&currency_code=USD&return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fsuccess.html&cancel_return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fpayment.html"
+          class="inline-flex justify-center items-center mt-2 px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm shadow-lg shadow-sky-500/40 transition"
+        >
+          Pay $199 with PayPal
+        </a>
+      </article>
+
+      <!-- OSP -->
+      <article class="border border-slate-800 rounded-2xl bg-slate-900/70 p-5 space-y-3">
+        <h3 class="text-lg font-semibold text-sky-200">OSP Construction & Deployment</h3>
+        <p class="text-sm text-slate-200">
+          Outside plant construction, safety, aerial/underground basics.
+        </p>
+        <div class="text-2xl font-bold text-slate-50">
+          $249 <span class="text-xs font-normal text-slate-400">USD</span>
+        </div>
+        <a
+          href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Luiggievite%40outlook.com&item_name=OSP%20Construction%20%26%20Deployment&amount=249.00&currency_code=USD&return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fsuccess.html&cancel_return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fpayment.html"
+          class="inline-flex justify-center items-center mt-2 px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm shadow-lg shadow-sky-500/40 transition"
+        >
+          Pay $249 with PayPal
+        </a>
+      </article>
+
+      <!-- OTDR -->
+      <article class="border border-slate-800 rounded-2xl bg-slate-900/70 p-5 space-y-3">
+        <h3 class="text-lg font-semibold text-sky-200">OTDR Testing & Analysis</h3>
+        <p class="text-sm text-slate-200">
+          OTDR setup, trace reading, troubleshooting and documentation.
+        </p>
+        <div class="text-2xl font-bold text-slate-50">
+          $229 <span class="text-xs font-normal text-slate-400">USD</span>
+        </div>
+        <a
+          href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Luiggievite%40outlook.com&item_name=OTDR%20Testing%20%26%20Analysis&amount=229.00&currency_code=USD&return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fsuccess.html&cancel_return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fpayment.html"
+          class="inline-flex justify-center items-center mt-2 px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm shadow-lg shadow-sky-500/40 transition"
+        >
+          Pay $229 with PayPal
+        </a>
+      </article>
+
+      <!-- Splicing -->
+      <article class="border border-slate-800 rounded-2xl bg-slate-900/70 p-5 space-y-3">
+        <h3 class="text-lg font-semibold text-sky-200">Fiber Splicing Technician</h3>
+        <p class="text-sm text-slate-200">
+          Fusion & mechanical splicing, prep, best practices and QC.
+        </p>
+        <div class="text-2xl font-bold text-slate-50">
+          $299 <span class="text-xs font-normal text-slate-400">USD</span>
+        </div>
+        <a
+          href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Luiggievite%40outlook.com&item_name=Fiber%20Splicing%20Technician&amount=299.00&currency_code=USD&return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fsuccess.html&cancel_return=https%3A%2F%2Fluiggie001.github.io%2Fviconnect-fiber-academy%2Fpayment.html"
+          class="inline-flex justify-center items-center mt-2 px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm shadow-lg shadow-sky-500/40 transition"
+        >
+          Pay $299 with PayPal
+        </a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950/90 mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs text-slate-400">
+      <div>© <span id="year"></span> Viconnect Fiber Academy. All rights reserved.</div>
+      <div>Hybrid · Bilingual · Job-Ready Fiber Training</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
