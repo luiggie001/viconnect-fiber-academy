@@ -1,185 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tuition & Enrollment - Viconnect Fiber Academy</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrollment – Viconnect Fiber Academy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script defer>
+        function toggleMenu() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        }
+    </script>
 </head>
-<body class="bg-slate-950 text-slate-100">
 
-  <!-- HEADER -->
-  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-      <a href="index.html" class="flex items-center gap-2">
-        <div class="w-11 h-11 rounded-lg bg-sky-500 flex items-center justify-center font-bold text-lg text-slate-900">
-          VFA
-        </div>
-        <div>
-          <div class="text-sm font-semibold">Viconnect Fiber Academy</div>
-          <div class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</div>
-        </div>
-      </a>
+<body class="bg-gray-900 text-gray-200">
 
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="index.html" class="hover:text-sky-400">Home</a>
-        <a href="courses.html" class="hover:text-sky-400">Certifications</a>
-        <a href="schedule.html" class="hover:text-sky-400">Schedule Lab</a>
-        <a href="enrollment.html" class="text-sky-400 font-semibold">Tuition & Enrollment</a>
-        <a href="contact.html" class="hover:text-sky-400">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- HEADER -->
+    <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-500 text-white px-3 py-1 rounded-lg font-bold text-xl">VFA</div>
+                <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
+            </div>
 
-  <main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
+            <button onclick="toggleMenu()" class="md:hidden bg-gray-700 px-3 py-2 rounded-lg">
+                MENU
+            </button>
 
-    <!-- INTRO -->
-    <section>
-      <h1 class="text-3xl font-bold mb-2">Tuition & Enrollment</h1>
-      <p class="text-sm text-slate-300 mb-2">
-        EN: Choose a certification and pay securely with PayPal. After payment, you will receive an email with your
-        enrollment confirmation, online access instructions, and available lab dates.
-      </p>
-      <p class="text-sm text-slate-400">
-        ES: Elija una certificación y pague de forma segura con PayPal. Después del pago, recibirá un correo con su
-        confirmación de inscripción, acceso a la teoría en línea y las fechas disponibles para el laboratorio.
-      </p>
-    </section>
-
-    <!-- MASTER CURRICULUM (HIGHLIGHT) -->
-    <section class="border border-sky-500/70 rounded-xl bg-slate-900/80 p-6 shadow-lg shadow-sky-900/40">
-      <p class="text-[11px] uppercase tracking-wide text-sky-300 font-semibold mb-1">
-        Recommended · Best Value
-      </p>
-      <h2 class="text-2xl font-bold text-sky-400 mb-2">
-        Master Fiber Optic Curriculum – All Courses
-      </h2>
-
-      <ul class="list-disc ml-6 text-sm text-slate-300 mb-3">
-        <li>Fiber Optic Technician (FOT)</li>
-        <li>OSP Construction & Deployment</li>
-        <li>OTDR Testing & Analysis</li>
-        <li>Fiber Splicing Technician</li>
-      </ul>
-
-      <p class="text-sm text-slate-400 mb-4">
-        EN: Full hybrid program (EN/ES) including all four certifications and hands-on lab days.<br/>
-        ES: Programa híbrido completo (EN/ES) con las cuatro certificaciones y todos los días de laboratorio incluidos.
-      </p>
-
-      <div class="flex items-baseline gap-3 mb-4">
-        <div class="text-3xl font-bold text-emerald-400">$1,199</div>
-        <div class="text-[11px] text-slate-400">USD · All four certifications included</div>
-      </div>
-
-      <a
-        href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Master+Fiber+Curriculum&amount=1199&currency_code=USD"
-        target="_blank"
-        class="inline-flex px-5 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold text-sm"
-      >
-        Pay $1,199 with PayPal
-      </a>
-
-      <p class="mt-3 text-[11px] text-slate-400">
-        After payment, look for an email from <span class="text-sky-400">viconnectfiberacademy@gmail.com</span> with your
-        enrollment details and next steps.
-      </p>
-    </section>
-
-    <!-- INDIVIDUAL CERTIFICATIONS GRID -->
-    <section class="space-y-4">
-      <h2 class="text-xl font-semibold mb-2">Individual Certifications</h2>
-      <p class="text-sm text-slate-400 mb-4">
-        EN: You may also enroll in individual certifications below.<br/>
-        ES: También puede inscribirse en certificaciones individuales.
-      </p>
-
-      <div class="grid md:grid-cols-2 gap-6">
-
-        <!-- FOT -->
-        <div class="border border-slate-800 rounded-xl bg-slate-900/70 p-5">
-          <h3 class="text-lg font-bold text-sky-400 mb-1">Fiber Optic Technician (FOT)</h3>
-          <p class="text-[12px] text-slate-300 mb-3">
-            EN: Foundational hybrid training in fiber theory, safety, connectors, basic splicing, testing and troubleshooting.<br/>
-            ES: Entrenamiento híbrido fundamental en teoría de fibra, seguridad, conectores, empalme básico, pruebas y resolución de fallas.
-          </p>
-          <div class="text-2xl font-bold text-emerald-400 mb-2">$399 USD</div>
-          <a
-            href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Fiber+Optic+Technician+(FOT)&amount=399&currency_code=USD"
-            target="_blank"
-            class="inline-flex px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm"
-          >
-            Pay $399 with PayPal
-          </a>
+            <nav class="hidden md:flex space-x-6 text-sm">
+                <a href="index.html" class="hover:text-blue-400">Home</a>
+                <a href="courses.html" class="hover:text-blue-400">Courses</a>
+                <a href="enrollment.html" class="text-blue-400 font-semibold">Enrollment</a>
+                <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
+                <a href="verify.html" class="hover:text-blue-400">Verify Certificate</a>
+                <a href="contact.html" class="hover:text-blue-400">Contact</a>
+            </nav>
         </div>
 
-        <!-- OSP -->
-        <div class="border border-slate-800 rounded-xl bg-slate-900/70 p-5">
-          <h3 class="text-lg font-bold text-sky-400 mb-1">OSP Construction & Deployment</h3>
-          <p class="text-[12px] text-slate-300 mb-3">
-            EN: Outside plant (OSP) construction, aerial/underground deployment and best practices.<br/>
-            ES: Construcción OSP, despliegue aéreo/subterráneo y mejores prácticas de campo.
-          </p>
-          <div class="text-2xl font-bold text-emerald-400 mb-2">$449 USD</div>
-          <a
-            href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=OSP+Construction+%26+Deployment&amount=449&currency_code=USD"
-            target="_blank"
-            class="inline-flex px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm"
-          >
-            Pay $449 with PayPal
-          </a>
+        <nav id="mobileMenu" class="md:hidden hidden bg-gray-800 border-t border-gray-700 px-4 pb-4">
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="courses.html" class="block py-2">Courses</a>
+            <a href="enrollment.html" class="block py-2">Enrollment</a>
+            <a href="labday.html" class="block py-2">Lab Day</a>
+            <a href="verify.html" class="block py-2">Verify Certificate</a>
+            <a href="contact.html" class="block py-2">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="max-w-6xl mx-auto px-4 py-10">
+        <h1 class="text-3xl font-bold text-blue-400 mb-4">Tuition & Enrollment</h1>
+
+        <p class="text-gray-300 mb-4">
+            EN: All programs are billed in USD. Payment is processed securely through PayPal. After payment, you will
+            receive a confirmation email and we will contact you to schedule your lab day.
+            <br />
+            ES: Todos los programas se cobran en USD. El pago se procesa de forma segura mediante PayPal. Después del pago,
+            recibirá un correo de confirmación y le contactaremos para programar su día de laboratorio.
+        </p>
+
+        <p class="text-sm text-gray-400 mb-8">
+            For now, enrollment is completed manually. Select your course below, then email us and we will send you a PayPal link or invoice.
+            <br />
+            Por el momento, la matrícula se completa manualmente. Seleccione su curso abajo y envíenos un correo para recibir el enlace o factura de PayPal.
+        </p>
+
+        <!-- PRICING GRID -->
+        <div class="grid md:grid-cols-2 gap-6 mb-10">
+
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+                <h2 class="text-xl font-semibold text-blue-300 mb-1">Fiber Optic Technician (FOT)</h2>
+                <p class="text-gray-300 text-sm mb-3">
+                    EN: Entry-level certification – fundamentals, safety, connectors and testing.
+                    <br />
+                    ES: Certificación de nivel inicial – fundamentos, seguridad, conectores y pruebas.
+                </p>
+                <div class="flex items-baseline space-x-2 mb-3">
+                    <div class="text-3xl font-bold text-blue-300">$399</div>
+                    <div class="text-xs text-gray-400">USD</div>
+                </div>
+                <p class="text-xs text-gray-400">
+                    Includes online theory + one lab day.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+                <h2 class="text-xl font-semibold text-blue-300 mb-1">Fiber Splicing Technician</h2>
+                <p class="text-gray-300 text-sm mb-3">
+                    EN: Fusion & mechanical splicing, closures, buffer tubes, real field procedures.
+                    <br />
+                    ES: Empalmes de fusión y mecánicos, cierres, tubos y procedimientos reales de campo.
+                </p>
+                <div class="flex items-baseline space-x-2 mb-3">
+                    <div class="text-3xl font-bold text-blue-300">$449</div>
+                    <div class="text-xs text-gray-400">USD</div>
+                </div>
+                <p class="text-xs text-gray-400">
+                    Includes online theory + one lab day.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+                <h2 class="text-xl font-semibold text-blue-300 mb-1">OTDR Testing & Analysis</h2>
+                <p class="text-gray-300 text-sm mb-3">
+                    EN: Setup, operation and interpretation of OTDR traces with real-case scenarios.
+                    <br />
+                    ES: Configuración, operación e interpretación de trazas OTDR con escenarios reales.
+                </p>
+                <div class="flex items-baseline space-x-2 mb-3">
+                    <div class="text-3xl font-bold text-blue-300">$499</div>
+                    <div class="text-xs text-gray-400">USD</div>
+                </div>
+                <p class="text-xs text-gray-400">
+                    Includes online theory + one lab day.
+                </p>
+            </div>
+
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+                <h2 class="text-xl font-semibold text-blue-300 mb-1">OSP Construction & Deployment</h2>
+                <p class="text-gray-300 text-sm mb-3">
+                    EN: Field construction, aerial/underground builds, safety and documentation.
+                    <br />
+                    ES: Construcción de campo, tendidos aéreos/subterráneos, seguridad y documentación.
+                </p>
+                <div class="flex items-baseline space-x-2 mb-3">
+                    <div class="text-3xl font-bold text-blue-300">$549</div>
+                    <div class="text-xs text-gray-400">USD</div>
+                </div>
+                <p class="text-xs text-gray-400">
+                    Includes online theory + one lab day.
+                </p>
+            </div>
+
         </div>
 
-        <!-- OTDR -->
-        <div class="border border-slate-800 rounded-xl bg-slate-900/70 p-5">
-          <h3 class="text-lg font-bold text-sky-400 mb-1">OTDR Testing & Analysis</h3>
-          <p class="text-[12px] text-slate-300 mb-3">
-            EN: OTDR fundamentals, testing setups, interpreting traces, and troubleshooting events.<br/>
-            ES: Fundamentos de OTDR, configuración de pruebas, interpretación de gráficas y solución de eventos.
-          </p>
-          <div class="text-2xl font-bold text-emerald-400 mb-2">$499 USD</div>
-          <a
-            href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=OTDR+Testing+%26+Analysis&amount=499&currency_code=USD"
-            target="_blank"
-            class="inline-flex px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm"
-          >
-            Pay $499 with PayPal
-          </a>
-        </div>
+        <!-- MASTER PROGRAM -->
+        <section class="bg-gray-800 border border-green-500 rounded-xl p-5">
+            <h2 class="text-2xl font-bold text-green-400 mb-2">Master Fiber Curriculum – All Courses</h2>
+            <p class="text-gray-300 mb-3">
+                EN: Best value – includes FOT, Fiber Splicing, OTDR Testing & Analysis, and OSP Construction.
+                <br />
+                ES: Mejor valor – incluye FOT, Empalme de Fibra, OTDR y Construcción OSP.
+            </p>
+            <div class="flex items-baseline space-x-2 mb-2">
+                <div class="text-3xl font-bold text-green-300">$1,199</div>
+                <div class="text-xs text-gray-400">USD · Complete path</div>
+            </div>
+            <p class="text-xs text-gray-400 mb-3">
+                Includes online theory + one lab day for each main track.
+            </p>
+        </section>
 
-        <!-- SPLICING -->
-        <div class="border border-slate-800 rounded-xl bg-slate-900/70 p-5">
-          <h3 class="text-lg font-bold text-sky-400 mb-1">Fiber Splicing Technician</h3>
-          <p class="text-[12px] text-slate-300 mb-3">
-            EN: Fusion and mechanical splicing, closures, buffer tube prep and field best practices.<br/>
-            ES: Empalme por fusión y mecánico, cierres, preparación de tubos y mejores prácticas de campo.
-          </p>
-          <div class="text-2xl font-bold text-emerald-400 mb-2">$549 USD</div>
-          <a
-            href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Fiber+Splicing+Technician&amount=549&currency_code=USD"
-            target="_blank"
-            class="inline-flex px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm"
-          >
-            Pay $549 with PayPal
-          </a>
-        </div>
+        <!-- HOW TO ENROLL -->
+        <section class="mt-8 bg-gray-900 border border-gray-700 rounded-xl p-5">
+            <h2 class="text-xl font-semibold mb-2">How to Enroll / Cómo Inscribirse</h2>
+            <p class="text-gray-300 text-sm mb-2">
+                1. Choose your course or the Master Curriculum above.
+                <br />
+                2. Email <span class="text-blue-300">viconnectfiberacademy@gmail.com</span> with:
+            </p>
+            <ul class="list-disc list-inside text-sm text-gray-300 mb-2">
+                <li>Full name</li>
+                <li>Phone number</li>
+                <li>Course you want</li>
+                <li>City / region</li>
+            </ul>
+            <p class="text-gray-300 text-sm">
+                We will reply with a PayPal link or invoice and next steps to complete your enrollment and schedule your lab day.
+                <br />
+                Le responderemos con un enlace o factura de PayPal y los próximos pasos para completar su matrícula y programar su laboratorio.
+            </p>
+        </section>
+    </main>
 
-      </div>
-    </section>
-
-    <!-- NOTE -->
-    <section class="border border-slate-800 rounded-xl bg-slate-900/70 p-4 text-[12px] text-slate-400">
-      <p>
-        EN: All payments are processed securely through PayPal. If you need a group or corporate invoice, please contact us
-        before enrolling so we can coordinate dates and pricing.
-      </p>
-      <p class="mt-2">
-        ES: Todos los pagos se procesan de forma segura a través de PayPal. Si necesita una factura corporativa o de grupo,
-        contáctenos antes de inscribirse para coordinar fechas y precios.
-      </p>
-    </section>
-
-  </main>
+    <footer class="bg-gray-800 border-t border-gray-700 mt-10 p-6 text-center text-gray-400 text-sm">
+        Viconnect Fiber Academy • Hybrid Bilingual Training • Job-Ready Skills  
+        <br />© 2025
+    </footer>
 
 </body>
 </html>
