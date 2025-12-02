@@ -1,109 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab Day – Viconnect Fiber Academy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <script defer>
-        function toggleMenu() {
-            document.getElementById("mobileMenu").classList.toggle("hidden");
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viconnect Fiber Academy</title>
+  <link rel="stylesheet" href="assets/tailwind.css" />
 </head>
-
 <body class="bg-gray-900 text-gray-200">
 
-    <!-- HEADER -->
-    <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-            <div class="flex items-center space-x-3">
-                <div class="bg-blue-500 text-white px-3 py-1 rounded-lg font-bold text-xl">VFA</div>
-                <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
-            </div>
 
-            <button onclick="toggleMenu()" class="md:hidden bg-gray-700 px-3 py-2 rounded-lg">
-                MENU
-            </button>
+<header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <div class="flex items-center space-x-3">
+      <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
+      <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
+    </div>
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden bg-gray-700 px-3 py-2 rounded-lg">
+      MENU
+    </button>
+    <nav class="hidden md:flex space-x-6 text-gray-300">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="courses.html" class="hover:text-blue-400">Courses</a>
+      <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
+      <a href="schedule.html" class="hover:text-blue-400">Schedule</a>
+      <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
+      <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
+      <a href="verify.html" class="hover:text-blue-400">Verify</a>
+      <a href="contact.html" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700 p-4 space-y-3">
+    <a href="index.html" class="block hover:text-blue-400">Home</a>
+    <a href="courses.html" class="block hover:text-blue-400">Courses</a>
+    <a href="enrollment.html" class="block hover:text-blue-400">Enroll</a>
+    <a href="schedule.html" class="block hover:text-blue-400">Schedule</a>
+    <a href="labday.html" class="block hover:text-blue-400">Lab Day</a>
+    <a href="certificate.html" class="block hover:text-blue-400">Certificate</a>
+    <a href="verify.html" class="block hover:text-blue-400">Verify</a>
+    <a href="contact.html" class="block hover:text-blue-400">Contact</a>
+  </nav>
+</header>
 
-            <nav class="hidden md:flex space-x-6 text-sm">
-                <a href="index.html" class="hover:text-blue-400">Home</a>
-                <a href="courses.html" class="hover:text-blue-400">Courses</a>
-                <a href="enrollment.html" class="hover:text-blue-400">Enrollment</a>
-                <a href="labday.html" class="text-blue-400 font-semibold">Lab Day</a>
-                <a href="verify.html" class="hover:text-blue-400">Verify Certificate</a>
-                <a href="contact.html" class="hover:text-blue-400">Contact</a>
-            </nav>
-        </div>
+<section class="max-w-6xl mx-auto px-4 py-10">
+  <h1 class="text-3xl font-bold text-blue-400 mb-4">Hands-On Lab Day</h1>
+  <p class="text-gray-300 mb-4 text-sm">
+    EN: Each certification includes one intensive hands-on lab day in Puerto Rico.
+    <br>
+    ES: Cada certificación incluye un día intensivo de laboratorio práctico en Puerto Rico.
+  </p>
+  <div class="space-y-4">
+    <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+      <h2 class="text-xl font-semibold text-blue-300 mb-2">What You Will Practice</h2>
+      <ul class="text-gray-300 text-sm space-y-1">
+        <li>• Fiber prep, cleaning & inspection.</li>
+        <li>• Fusion & mechanical splicing.</li>
+        <li>• Connector installation & testing.</li>
+        <li>• OTDR setup & basic trace reading.</li>
+      </ul>
+    </div>
+    <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
+      <h2 class="text-xl font-semibold text-blue-300 mb-2">Location & Scheduling</h2>
+      <p class="text-gray-300 text-sm">
+        Labs are held at designated training locations in Puerto Rico. Exact address and time are provided by email
+        after enrollment.
+      </p>
+    </div>
+  </div>
+</section>
 
-        <nav id="mobileMenu" class="md:hidden hidden bg-gray-800 border-t border-gray-700 px-4 pb-4">
-            <a href="index.html" class="block py-2">Home</a>
-            <a href="courses.html" class="block py-2">Courses</a>
-            <a href="enrollment.html" class="block py-2">Enrollment</a>
-            <a href="labday.html" class="block py-2">Lab Day</a>
-            <a href="verify.html" class="block py-2">Verify Certificate</a>
-            <a href="contact.html" class="block py-2">Contact</a>
-        </nav>
-    </header>
+<footer class="text-center py-6 mt-12 text-gray-500 text-sm border-t border-gray-800">
+  © 2025 Viconnect Fiber Academy. All rights reserved.
+</footer>
 
-    <!-- CONTENT -->
-    <main class="max-w-6xl mx-auto px-4 py-10">
-        <h1 class="text-3xl font-bold text-blue-400 mb-4">Hands-On Lab Day</h1>
-
-        <p class="text-gray-300 mb-4">
-            EN: Each certification includes one intensive hands-on lab day in Puerto Rico. Small groups ensure
-            maximum practice time and direct feedback.
-            <br />
-            ES: Cada certificación incluye un día intensivo de laboratorio práctico en Puerto Rico. Grupos pequeños
-            aseguran máximo tiempo de práctica y retroalimentación directa.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-6 mb-8">
-            <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
-                <h2 class="text-xl font-semibold text-blue-300 mb-2">What You Will Practice</h2>
-                <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-                    <li>Fiber prep, cleaning & inspection.</li>
-                    <li>Fusion splicing & mechanical splicing.</li>
-                    <li>Connector installation & testing.</li>
-                    <li>OTDR setup & basic trace reading.</li>
-                    <li>Real troubleshooting scenarios.</li>
-                </ul>
-            </div>
-
-            <div class="bg-gray-800 border border-gray-700 rounded-xl p-5">
-                <h2 class="text-xl font-semibold text-blue-300 mb-2">What To Bring</h2>
-                <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
-                    <li>Safety shoes (steel/composite recommended).</li>
-                    <li>Safety glasses (we may provide extras).</li>
-                    <li>Comfortable work clothing.</li>
-                    <li>Notebook & pen.</li>
-                </ul>
-                <p class="text-gray-400 text-xs mt-3">
-                    All fiber tools, test equipment and consumables are provided during lab.
-                </p>
-            </div>
-        </div>
-
-        <div class="bg-gray-900 border border-gray-700 rounded-xl p-5">
-            <h2 class="text-xl font-semibold mb-2">Location & Scheduling</h2>
-            <p class="text-gray-300 text-sm mb-2">
-                EN: Lab sessions are held at designated training locations in Puerto Rico. Exact address and time are
-                provided by email after enrollment.
-                <br />
-                ES: Las sesiones de laboratorio se realizan en lugares de entrenamiento designados en Puerto Rico. La
-                dirección y hora exactas se envían por correo electrónico después de su matrícula.
-            </p>
-            <p class="text-gray-300 text-sm">
-                To ask about lab availability, email:
-                <span class="text-blue-300">viconnectfiberacademy@gmail.com</span>
-            </p>
-        </div>
-    </main>
-
-    <footer class="bg-gray-800 border-t border-gray-700 mt-10 p-6 text-center text-gray-400 text-sm">
-        Viconnect Fiber Academy • Hybrid Bilingual Training • Job-Ready Skills  
-        <br />© 2025
-    </footer>
 
 </body>
 </html>

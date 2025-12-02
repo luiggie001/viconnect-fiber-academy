@@ -1,149 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tuition & Enrollment – Viconnect Fiber Academy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viconnect Fiber Academy</title>
+  <link rel="stylesheet" href="assets/tailwind.css" />
 </head>
-
-<body class="bg-slate-950 text-slate-100">
-
-    <!-- HEADER -->
-    <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur">
-        <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
-            <a href="index.html" class="flex items-center gap-3">
-                <div class="w-11 h-11 rounded-lg bg-sky-600 flex items-center justify-center font-bold text-white">
-                    VFA
-                </div>
-                <div>
-                    <div class="text-sm font-semibold">Viconnect Fiber Academy</div>
-                    <div class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual · Job-Ready</div>
-                </div>
-            </a>
-
-            <nav class="hidden md:flex items-center gap-6 text-sm">
-                <a href="index.html" class="hover:text-sky-400">Home</a>
-                <a href="courses.html" class="hover:text-sky-400">Courses</a>
-                <a href="enrollment.html" class="hover:text-sky-400">Certifications</a>
-                <a href="payment.html" class="text-sky-400 font-semibold">Tuition</a>
-                <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
-                <a href="contact.html" class="hover:text-sky-400">Contact</a>
-            </nav>
-        </div>
-    </header>
+<body class="bg-gray-900 text-gray-200">
 
 
+<header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <div class="flex items-center space-x-3">
+      <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
+      <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
+    </div>
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden bg-gray-700 px-3 py-2 rounded-lg">
+      MENU
+    </button>
+    <nav class="hidden md:flex space-x-6 text-gray-300">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="courses.html" class="hover:text-blue-400">Courses</a>
+      <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
+      <a href="schedule.html" class="hover:text-blue-400">Schedule</a>
+      <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
+      <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
+      <a href="verify.html" class="hover:text-blue-400">Verify</a>
+      <a href="contact.html" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700 p-4 space-y-3">
+    <a href="index.html" class="block hover:text-blue-400">Home</a>
+    <a href="courses.html" class="block hover:text-blue-400">Courses</a>
+    <a href="enrollment.html" class="block hover:text-blue-400">Enroll</a>
+    <a href="schedule.html" class="block hover:text-blue-400">Schedule</a>
+    <a href="labday.html" class="block hover:text-blue-400">Lab Day</a>
+    <a href="certificate.html" class="block hover:text-blue-400">Certificate</a>
+    <a href="verify.html" class="block hover:text-blue-400">Verify</a>
+    <a href="contact.html" class="block hover:text-blue-400">Contact</a>
+  </nav>
+</header>
 
-    <!-- MAIN CONTENT -->
-    <main class="max-w-4xl mx-auto px-5 py-10 space-y-12">
+<section class="max-w-6xl mx-auto px-4 py-10">
+  <h1 class="text-3xl font-bold text-blue-400 mb-4">Payment Information</h1>
+  <p class="text-gray-300 text-sm">
+    EN: Payments are processed securely via PayPal using your email <span class="text-blue-300">luiggievite@outlook.com</span>.
+    <br>
+    ES: Los pagos se procesan de forma segura a través de PayPal usando su correo.
+  </p>
+  <p class="text-gray-400 text-xs mt-3">
+    For now, students will receive a manual PayPal invoice after contacting the academy.
+  </p>
+</section>
 
-        <h1 class="text-4xl font-bold mb-6">Tuition & Enrollment – Pay Securely with PayPal</h1>
+<footer class="text-center py-6 mt-12 text-gray-500 text-sm border-t border-gray-800">
+  © 2025 Viconnect Fiber Academy. All rights reserved.
+</footer>
 
-        <p class="text-slate-300 mb-6">
-            EN: Select your certification below and pay securely with PayPal. After payment, you will receive a PayPal receipt and 
-            we will contact you by email to finish your enrollment and schedule your lab day.
-        </p>
-
-        <p class="text-slate-300 mb-10">
-            ES: Seleccione su certificación y pague de forma segura con PayPal. Después del pago, recibirá un recibo de PayPal 
-            y le contactaremos por correo electrónico para completar su matrícula y programar su día de laboratorio.
-        </p>
-
-        <p class="text-sm text-slate-400">All prices in <span class="font-bold text-sky-400">USD ($)</span>.</p>
-
-
-        <!-- MASTER CURRICULUM -->
-        <section class="border border-slate-800 bg-slate-900/40 rounded-2xl p-7 space-y-4">
-            <h2 class="text-2xl font-semibold text-sky-400">Master Fiber Optic Curriculum – All Courses</h2>
-
-            <ul class="list-disc pl-6 text-slate-300">
-                <li>Fiber Optic Technician (FOT)</li>
-                <li>OSP Construction & Deployment</li>
-                <li>OTDR Testing & Analysis</li>
-                <li>Fiber Splicing Technician</li>
-            </ul>
-
-            <p class="text-slate-400">
-                Full hybrid program (EN/ES) + all lab days included.
-            </p>
-
-            <div class="text-4xl font-bold text-emerald-400">$1,199</div>
-
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&currency_code=USD&amount=1199&item_name=Master+Fiber+Optic+Curriculum"
-               target="_blank"
-               class="inline-flex px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-black font-semibold">
-                Pay $1,199 with PayPal
-            </a>
-
-            <p class="text-xs text-slate-500">After payment, look for an email from VFA with enrollment instructions.</p>
-        </section>
-
-
-        <!-- INDIVIDUAL CERTIFICATIONS -->
-        <section class="space-y-10">
-
-            <!-- FOT -->
-            <div class="border border-slate-800 bg-slate-900/40 rounded-2xl p-6">
-                <h3 class="text-xl font-semibold mb-2">Fiber Optic Technician (FOT)</h3>
-                <p class="text-slate-400 mb-3">Foundational hybrid certification.</p>
-
-                <div class="text-3xl font-bold text-emerald-400">$499</div>
-
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&currency_code=USD&amount=499&item_name=Fiber+Optic+Technician"
-                   target="_blank"
-                   class="inline-flex px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-black font-semibold mt-3">
-                    Pay $499 with PayPal
-                </a>
-            </div>
-
-
-            <!-- OSP -->
-            <div class="border border-slate-800 bg-slate-900/40 rounded-2xl p-6">
-                <h3 class="text-xl font-semibold mb-2">OSP Construction & Deployment</h3>
-                <p class="text-slate-400 mb-3">Aerial/underground fiber construction.</p>
-
-                <div class="text-3xl font-bold text-emerald-400">$649</div>
-
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&currency_code=USD&amount=649&item_name=OSP+Construction+and+Deployment"
-                   target="_blank"
-                   class="inline-flex px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-black font-semibold mt-3">
-                    Pay $649 with PayPal
-                </a>
-            </div>
-
-
-            <!-- OTDR -->
-            <div class="border border-slate-800 bg-slate-900/40 rounded-2xl p-6">
-                <h3 class="text-xl font-semibold mb-2">OTDR Testing & Analysis</h3>
-                <p class="text-slate-400 mb-3">Advanced fiber testing and troubleshooting.</p>
-
-                <div class="text-3xl font-bold text-emerald-400">$549</div>
-
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&currency_code=USD&amount=549&item_name=OTDR+Testing+and+Analysis"
-                   target="_blank"
-                   class="inline-flex px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-black font-semibold mt-3">
-                    Pay $549 with PayPal
-                </a>
-            </div>
-
-
-            <!-- SPLICING -->
-            <div class="border border-slate-800 bg-slate-900/40 rounded-2xl p-6">
-                <h3 class="text-xl font-semibold mb-2">Fiber Splicing Technician</h3>
-                <p class="text-slate-400 mb-3">Fusion & mechanical splicing.</p>
-
-                <div class="text-3xl font-bold text-emerald-400">$649</div>
-
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&currency_code=USD&amount=649&item_name=Fiber+Splicing+Technician"
-                   target="_blank"
-                   class="inline-flex px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-black font-semibold mt-3">
-                    Pay $649 with PayPal
-                </a>
-            </div>
-
-        </section>
-    </main>
 
 </body>
 </html>

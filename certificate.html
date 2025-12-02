@@ -1,101 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certificate – Viconnect Fiber Academy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viconnect Fiber Academy</title>
+  <link rel="stylesheet" href="assets/tailwind.css" />
 </head>
-
 <body class="bg-gray-900 text-gray-200">
 
-<!-- HEADER -->
+
 <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-
-        <!-- Logo -->
-        <div class="flex items-center space-x-3">
-            <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
-            <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
-        </div>
-
-        <!-- Mobile button -->
-        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" 
-                class="md:hidden bg-gray-700 px-3 py-2 rounded-lg">
-            MENU
-        </button>
-
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex space-x-6 text-gray-300">
-            <a href="index.html" class="hover:text-blue-400">Home</a>
-            <a href="courses.html" class="hover:text-blue-400">Courses</a>
-            <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
-            <a href="certificate.html" class="text-blue-400 font-semibold">Certificate</a>
-            <a href="verify.html" class="hover:text-blue-400">Verify</a>
-            <a href="contact.html" class="hover:text-blue-400">Contact</a>
-        </nav>
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <div class="flex items-center space-x-3">
+      <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
+      <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
     </div>
-
-    <!-- Mobile dropdown -->
-    <nav id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700 p-4 space-y-3">
-        <a href="index.html" class="block hover:text-blue-400">Home</a>
-        <a href="courses.html" class="block hover:text-blue-400">Courses</a>
-        <a href="enrollment.html" class="block hover:text-blue-400">Enroll</a>
-        <a href="certificate.html" class="block text-blue-400 font-semibold">Certificate</a>
-        <a href="verify.html" class="block hover:text-blue-400">Verify</a>
-        <a href="contact.html" class="block hover:text-blue-400">Contact</a>
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden bg-gray-700 px-3 py-2 rounded-lg">
+      MENU
+    </button>
+    <nav class="hidden md:flex space-x-6 text-gray-300">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="courses.html" class="hover:text-blue-400">Courses</a>
+      <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
+      <a href="schedule.html" class="hover:text-blue-400">Schedule</a>
+      <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
+      <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
+      <a href="verify.html" class="hover:text-blue-400">Verify</a>
+      <a href="contact.html" class="hover:text-blue-400">Contact</a>
     </nav>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700 p-4 space-y-3">
+    <a href="index.html" class="block hover:text-blue-400">Home</a>
+    <a href="courses.html" class="block hover:text-blue-400">Courses</a>
+    <a href="enrollment.html" class="block hover:text-blue-400">Enroll</a>
+    <a href="schedule.html" class="block hover:text-blue-400">Schedule</a>
+    <a href="labday.html" class="block hover:text-blue-400">Lab Day</a>
+    <a href="certificate.html" class="block hover:text-blue-400">Certificate</a>
+    <a href="verify.html" class="block hover:text-blue-400">Verify</a>
+    <a href="contact.html" class="block hover:text-blue-400">Contact</a>
+  </nav>
 </header>
 
-<!-- CONTENT -->
 <section class="max-w-6xl mx-auto px-4 py-10">
-
-    <h1 class="text-3xl font-bold text-blue-400">Official Certificate</h1>
-    <p class="text-sm text-gray-300 mt-3">
-        EN: Below is the sample certificate for all Viconnect Fiber Academy programs.  
-        ES: Abajo verá el certificado de ejemplo para todos los programas de Viconnect Fiber Academy.
-    </p>
-
-    <!-- Certificate Preview -->
-    <div class="mt-8 bg-gray-800 border border-gray-700 rounded-xl p-6">
-        <h2 class="text-xl font-semibold text-blue-300">Certificate Preview</h2>
-
-        <p class="text-gray-300 text-sm mt-2">
-            EN: Students will receive this official certificate after completing all course requirements.  
-            ES: Los estudiantes recibirán este certificado oficial después de completar todos los requisitos.
-        </p>
-
-        <img src="assets/certificate-preview.png" 
-             alt="Certificate Preview"
-             class="w-full max-w-3xl mt-6 rounded-xl border border-gray-700 shadow-lg" />
-    </div>
-
-    <!-- Download Section -->
-    <div class="mt-10 bg-gray-800 border border-gray-700 rounded-xl p-6">
-        <h2 class="text-xl font-semibold text-blue-300">Download Certificate</h2>
-        <p class="text-gray-300 text-sm mt-2">
-            EN: If your certificate is ready, you may download it below.  
-            ES: Si su certificado está listo, puede descargarlo abajo.
-        </p>
-
-        <a href="#" 
-           class="inline-block mt-5 bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-lg text-sm font-semibold text-white">
-           Download Certificate (PDF)
-        </a>
-
-        <p class="text-xs text-gray-500 mt-4">
-            If your certificate is not available yet, please contact:  
-            <br>
-            <span class="text-blue-300">viconnectfiberacademy@gmail.com</span>
-        </p>
-    </div>
-
+  <h1 class="text-3xl font-bold text-blue-400">Official Certificate</h1>
+  <p class="text-sm text-gray-300 mt-3">
+    EN: Below is the sample certificate for all Viconnect Fiber Academy programs.
+    <br>
+    ES: Abajo verá el certificado de ejemplo para todos los programas.
+  </p>
+  <div class="mt-8 bg-gray-800 border border-gray-700 rounded-xl p-6">
+    <h2 class="text-xl font-semibold text-blue-300">Certificate Preview</h2>
+    <img src="assets/certificate-preview.png" alt="Certificate Preview"
+         class="w-full max-w-3xl mt-6 rounded-xl border border-gray-700 shadow-lg" />
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="text-center py-6 mt-12 text-gray-500 text-sm border-t border-gray-800">
-    © 2025 Viconnect Fiber Academy. All rights reserved.
+  © 2025 Viconnect Fiber Academy. All rights reserved.
 </footer>
+
 
 </body>
 </html>
