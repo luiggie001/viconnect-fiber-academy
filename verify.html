@@ -3,82 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viconnect Fiber Academy</title>
-  <link rel="stylesheet" href="assets/tailwind.css" />
+  <title>Verify Certificate - Viconnect Fiber Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Hybrid bilingual fiber optic training with online theory and hands-on lab days. Job-ready skills for ISP and OSP roles." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230EA5E9'/><text x='50' y='58' text-anchor='middle' font-size='42' fill='white' font-family='system-ui, -apple-system, BlinkMacSystemFont, sans-serif'>VFA</text></svg>">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      if (menu) { menu.classList.toggle('hidden'); }
+    }
+  </script>
 </head>
-<body class="bg-gray-900 text-gray-200">
 
+  <script>
+    function handleVerifySubmit(event) {
+      event.preventDefault();
+      const input = document.getElementById('certificateId');
+      const result = document.getElementById('verifyResult');
+      const id = (input?.value || '').trim();
+      if (!id) {
+        result.innerHTML = "<p class='text-red-400 text-sm mt-3'>Please enter a certificate ID.</p>";
+        return;
+      }
+      result.innerHTML = `
+        <div class="mt-4 p-4 bg-slate-900 border border-slate-700 rounded-xl text-sm text-slate-200">
+          <p class="font-semibold text-sky-400 mb-1">Verification Submitted</p>
+          <p>This certificate ID will be manually verified by the academy.</p>
+          <p class="text-slate-400 mt-1 text-xs">A real-time verification system will be added after FOA accreditation.</p>
+        </div>
+      `;
+    }
+  </script>
 
-<header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-    <div class="flex items-center space-x-3">
-      <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
-      <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
+<body class="bg-slate-950 text-slate-100">
+  <!-- HEADER -->
+  <header class="bg-slate-900/95 border-b border-slate-800 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-sky-500 flex items-center justify-center text-xl font-bold text-white shadow-lg shadow-sky-500/40">
+          VFA
+        </div>
+        <div>
+          <div class="text-sm font-semibold tracking-wide uppercase text-slate-300">
+            Viconnect Fiber Academy
+          </div>
+          <div class="text-[11px] text-slate-400">
+            Hybrid Fiber Optic Training · Bilingual · Job-Ready
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-200">
+        <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+        <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
+        <a href="enrollment.html" class="hover:text-sky-400 transition">Enroll</a>
+        <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
+        <a href="labday.html" class="hover:text-sky-400 transition">Lab Day</a>
+        <a href="certificate.html" class="hover:text-sky-400 transition">Certificate</a>
+        <a href="verify.html" class="hover:text-sky-400 transition">Verify</a>
+        <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button onclick="toggleMobileMenu()"
+        class="md:hidden inline-flex items-center px-4 py-2 rounded-xl bg-slate-800 text-xs font-semibold tracking-wide text-slate-100 border border-slate-700 shadow-sm active:scale-95 transition">
+        MENU
+      </button>
     </div>
-    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden bg-gray-700 px-3 py-2 rounded-lg">
-      MENU
-    </button>
-    <nav class="hidden md:flex space-x-6 text-gray-300">
-      <a href="index.html" class="hover:text-blue-400">Home</a>
-      <a href="courses.html" class="hover:text-blue-400">Courses</a>
-      <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
-      <a href="schedule.html" class="hover:text-blue-400">Schedule</a>
-      <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
-      <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
-      <a href="verify.html" class="hover:text-blue-400">Verify</a>
-      <a href="contact.html" class="hover:text-blue-400">Contact</a>
-    </nav>
-  </div>
-  <nav id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700 p-4 space-y-3">
-    <a href="index.html" class="block hover:text-blue-400">Home</a>
-    <a href="courses.html" class="block hover:text-blue-400">Courses</a>
-    <a href="enrollment.html" class="block hover:text-blue-400">Enroll</a>
-    <a href="schedule.html" class="block hover:text-blue-400">Schedule</a>
-    <a href="labday.html" class="block hover:text-blue-400">Lab Day</a>
-    <a href="certificate.html" class="block hover:text-blue-400">Certificate</a>
-    <a href="verify.html" class="block hover:text-blue-400">Verify</a>
-    <a href="contact.html" class="block hover:text-blue-400">Contact</a>
-  </nav>
-</header>
 
-<section class="max-w-6xl mx-auto px-4 py-10">
-  <h1 class="text-3xl font-bold text-blue-400">Verify Certificate</h1>
-  <p class="text-gray-300 text-sm mt-3">
-    EN: Enter the Certificate ID printed on the bottom-right corner of the certificate.
-    <br>
-    ES: Ingrese el ID del Certificado que aparece en la esquina inferior derecha.
-  </p>
-  <div class="mt-8 bg-gray-800 border border-gray-700 rounded-xl p-6 max-w-xl">
-    <label class="block text-sm text-gray-300 mb-2">Certificate ID</label>
-    <input id="certID" type="text" placeholder="e.g., VFA-FOT-2025-00123"
-           class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100" />
-    <button onclick="verifyCert()"
-            class="w-full mt-4 bg-blue-500 hover:bg-blue-600 py-2 rounded-lg text-white font-semibold">
-      Verify Certificate
-    </button>
-    <div id="result" class="mt-6"></div>
-  </div>
-</section>
-<script>
-function verifyCert() {
-  var id = document.getElementById('certID').value.trim();
-  var result = document.getElementById('result');
-  if (!id) {
-    result.innerHTML = "<p class='text-red-400 text-sm'>Please enter a certificate ID.</p>";
-    return;
-  }
-  result.innerHTML = "<div class='p-4 bg-gray-800 border border-gray-700 rounded-xl text-sm text-gray-200'>" +
-    "<p class='font-semibold text-blue-400 mb-1'>Verification Submitted</p>" +
-    "<p>The certificate ID <span class='font-semibold'>" + id + "</span> has been received for manual verification.</p>" +
-    "<p class='text-gray-400 text-xs mt-2'>Automated verification will be enabled after FOA accreditation.</p>" +
-    "</div>";
-}
-</script>
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800 bg-slate-900/98">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="index.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Home</a>
+        <a href="courses.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Courses</a>
+        <a href="enrollment.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Enroll</a>
+        <a href="schedule.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Schedule</a>
+        <a href="labday.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Lab Day</a>
+        <a href="certificate.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Certificate</a>
+        <a href="verify.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Verify</a>
+        <a href="contact.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<footer class="text-center py-6 mt-12 text-gray-500 text-sm border-t border-gray-800">
-  © 2025 Viconnect Fiber Academy. All rights reserved.
-</footer>
+  <main class="min-h-[70vh]">
 
+    <section class="max-w-6xl mx-auto px-4 pt-10 pb-10 space-y-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-slate-50 mb-2">Verify Certificate</h1>
+      <p class="text-sm text-slate-300 max-w-2xl">
+        Employers and clients can request verification of a certificate using the Certificate ID printed on the document.
+      </p>
+      <div class="max-w-md rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-5 mt-4">
+        <form onsubmit="handleVerifySubmit(event)" class="space-y-3">
+          <div class="space-y-1">
+            <label for="certificateId" class="text-xs font-semibold text-slate-200 tracking-wide">
+              Certificate ID / ID de Certificado
+            </label>
+            <input id="certificateId" name="certificateId" type="text" required
+              class="w-full rounded-lg border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500"
+              placeholder="VFA-2025-XXXX" />
+          </div>
+          <button type="submit"
+            class="w-full inline-flex justify-center items-center px-4 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-sm font-semibold text-white shadow-md shadow-sky-500/40">
+            Submit Verification Request
+          </button>
+        </form>
+        <div id="verifyResult" class="text-sm text-slate-200"></div>
+      </div>
+      <a href="index.html" class="text-xs text-slate-400 hover:text-sky-400 underline mt-4 inline-block">← Back to Home</a>
+    </section>
 
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-900 mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-500 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+      <p>© 2025 Viconnect Fiber Academy. Hybrid Fiber Training – Puerto Rico.</p>
+      <p class="text-[11px]">Bilingual EN/ES · ISP &amp; OSP Job-Ready · Small Group Lab Training</p>
+    </div>
+  </footer>
 </body>
 </html>
