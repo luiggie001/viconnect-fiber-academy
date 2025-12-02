@@ -3,232 +3,148 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courses - Viconnect Fiber Academy</title>
+    <title>Fiber Optic Certifications | Viconnect Fiber Academy</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-950 text-slate-100">
+<body class="bg-slate-950 text-slate-200">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-11 h-11 rounded-lg bg-sky-500 flex items-center justify-center font-bold text-lg text-slate-900">
+                    VFA
+                </div>
+                <div>
+                    <h1 class="text-lg font-semibold">Viconnect Fiber Academy</h1>
+                    <p class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual · Job-Ready</p>
+                </div>
+            </a>
 
-<header class="border-b border-slate-800">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
-        <a href="index.html" class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center text-xl font-bold text-slate-900">
-                VFA
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="courses.html" class="text-sky-400 font-semibold">Certifications</a>
+                <a href="schedule.html" class="hover:text-sky-400">Schedule Lab</a>
+                <a href="enrollment.html" class="hover:text-sky-400">Enroll</a>
+                <a href="contact.html" class="hover:text-sky-400">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-10">
+        <h1 class="text-3xl font-bold text-white mb-2">Hybrid Fiber Optic Certifications</h1>
+        <p class="text-slate-400 mb-8 text-sm">
+            EN: Select a certification program. Each includes online theory (EN/ES) and one in-person lab day. <br>
+            ES: Seleccione una certificación. Cada programa incluye teoría en línea (EN/ES) y un día de laboratorio presencial.
+        </p>
+
+        <!-- MASTER CURRICULUM (HIGHLIGHTED) -->
+        <section class="border border-sky-500/70 rounded-xl bg-slate-900/80 p-6 shadow-lg shadow-sky-900/40 mb-10">
+            <p class="text-[11px] uppercase tracking-wide text-sky-300 font-semibold mb-1">
+                Recommended · Best Value
+            </p>
+            <h2 class="text-2xl font-bold text-sky-400 mb-2">
+                Master Fiber Optic Curriculum – All Courses
+            </h2>
+
+            <ul class="list-disc ml-6 text-sm text-slate-300 mb-3">
+                <li>Fiber Optic Technician (FOT)</li>
+                <li>OSP Construction & Deployment</li>
+                <li>OTDR Testing & Analysis</li>
+                <li>Fiber Splicing Technician</li>
+            </ul>
+
+            <p class="text-sm text-slate-400 mb-4">Full hybrid program (EN/ES) + all lab days included.</p>
+
+            <div class="flex items-baseline gap-3 mb-4">
+                <div class="text-3xl font-bold text-emerald-400">$1,199</div>
+                <div class="text-[11px] text-slate-400">USD · Includes all certifications</div>
             </div>
-            <div>
-                <div class="font-semibold text-slate-50">Viconnect Fiber Academy</div>
-                <div class="text-[11px] text-slate-400">Hybrid Fiber Optic Training · Bilingual</div>
+
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Master+Fiber+Curriculum&amount=1199&currency_code=USD"
+               target="_blank"
+               class="px-5 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold text-sm block w-fit">
+                Pay $1,199 with PayPal
+            </a>
+
+            <p class="mt-3 text-[11px] text-slate-400">
+                After payment, check your email for enrollment and lab scheduling instructions.
+            </p>
+        </section>
+
+        <!-- INDIVIDUAL CERTIFICATIONS -->
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- FOT -->
+            <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/60">
+                <h2 class="text-xl font-bold text-sky-400 mb-2">Fiber Optic Technician (FOT)</h2>
+                <p class="text-sm text-slate-300 mb-3">
+                    EN: Foundational hybrid certification — safety, connectors, splicing basics, testing & troubleshooting.<br>
+                    ES: Certificación híbrida fundamental — seguridad, conectores, empalme básico, pruebas y resolución de fallas.
+                </p>
+
+                <div class="text-2xl font-bold text-emerald-400 mb-3">$399 USD</div>
+
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Fiber+Optic+Technician+(FOT)&amount=399&currency_code=USD"
+                   target="_blank"
+                   class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm">
+                    Pay $399 with PayPal
+                </a>
             </div>
-        </a>
-        <nav class="flex items-center gap-6 text-sm font-semibold">
-            <a href="index.html" class="hover:text-emerald-400">Home</a>
-            <a href="courses.html" class="text-emerald-400">Courses</a>
-            <a href="schedule.html" class="hover:text-emerald-400">Schedule</a>
-            <a href="verify.html" class="hover:text-emerald-400">Verify Certificate</a>
-            <a href="contact.html" class="hover:text-emerald-400">Contact</a>
-        </nav>
-    </div>
-</header>
 
-<main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
+            <!-- OSP -->
+            <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/60">
+                <h2 class="text-xl font-bold text-sky-400 mb-2">OSP Construction & Deployment</h2>
+                <p class="text-sm text-slate-300 mb-3">
+                    EN: Aerial/underground builds, safety compliance, industry standards.<br>
+                    ES: Construcción aérea/subterránea, seguridad y estándares de calidad.
+                </p>
 
-    <!-- MASTER CURRICULUM (HIGHLIGHTED) -->
-    <section class="border border-sky-500/70 rounded-xl bg-slate-900/80 p-6 shadow-lg shadow-sky-900/40">
-        <p class="text-[11px] uppercase tracking-wide text-sky-300 font-semibold mb-1">
-            Recommended · Best Value
-        </p>
-        <h2 class="text-2xl font-bold text-sky-400 mb-2">
-            Master Fiber Optic Curriculum – All Courses
-        </h2>
+                <div class="text-2xl font-bold text-emerald-400 mb-3">$449 USD</div>
 
-        <p class="text-[12px] text-slate-300 mb-2">
-            EN: Complete bilingual hybrid program including Fiber Optic Technician (FOT), OSP Construction & Deployment,
-            OTDR Testing & Analysis, and Fiber Splicing Technician.
-        </p>
-        <p class="text-[12px] text-slate-400 mb-3">
-            ES: Programa híbrido bilingüe completo que incluye Técnico en Fibra Óptica (FOT), Construcción OSP y Despliegue,
-            Pruebas OTDR y Análisis, y Técnico de Empalme de Fibra.
-        </p>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=OSP+Construction+%26+Deployment&amount=449&currency_code=USD"
+                   target="_blank"
+                   class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm">
+                    Pay $449 with PayPal
+                </a>
+            </div>
 
-        <div class="flex flex-wrap items-baseline gap-3 mb-4">
-            <div class="text-3xl font-bold text-emerald-400">$1,199</div>
-            <div class="text-[11px] text-slate-400">USD · All four certifications included</div>
+            <!-- OTDR -->
+            <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/60">
+                <h2 class="text-xl font-bold text-sky-400 mb-2">OTDR Testing & Analysis</h2>
+                <p class="text-sm text-slate-300 mb-3">
+                    EN: OTDR fundamentals, interpreting traces, field troubleshooting.<br>
+                    ES: Fundamentos de OTDR, interpretación de gráficas y solución de fallas.
+                </p>
+
+                <div class="text-2xl font-bold text-emerald-400 mb-3">$499 USD</div>
+
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=OTDR+Testing+%26+Analysis&amount=499&currency_code=USD"
+                   target="_blank"
+                   class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm">
+                    Pay $499 with PayPal
+                </a>
+            </div>
+
+            <!-- SPLICING -->
+            <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/60">
+                <h2 class="text-xl font-bold text-sky-400 mb-2">Fiber Splicing Technician</h2>
+                <p class="text-sm text-slate-300 mb-3">
+                    EN: Fusion splicing, mechanical splicing, closures, buffer tube prep.<br>
+                    ES: Empalme por fusión, empalme mecánico, cierres y preparación de fibra.
+                </p>
+
+                <div class="text-2xl font-bold text-emerald-400 mb-3">$549 USD</div>
+
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Fiber+Splicing+Technician&amount=549&currency_code=USD"
+                   target="_blank"
+                   class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm">
+                    Pay $549 with PayPal
+                </a>
+            </div>
+
         </div>
-
-        <div class="flex flex-wrap gap-3 mt-2">
-            <!-- PAYPAL MASTER BUTTON -->
-            <a
-                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Master+Fiber+Curriculum+-+All+Courses&amount=1199&currency_code=USD"
-                target="_blank"
-                class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-sm font-semibold text-slate-900"
-            >
-                Enroll in Master Curriculum – Pay $1,199
-            </a>
-
-            <!-- You can later link a detailed Master PDF here -->
-            <a
-                href="Master_Curriculum.pdf"
-                class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-[13px] font-semibold"
-            >
-                View Master Curriculum PDF
-            </a>
-        </div>
-
-        <p class="mt-3 text-[11px] text-slate-400">
-            After payment, you will receive an email from Viconnect Fiber Academy to complete enrollment and schedule
-            your hands-on lab day.
-        </p>
-    </section>
-
-    <!-- FOT COURSE -->
-    <section class="border border-slate-800 p-6 rounded-xl bg-slate-900">
-        <h2 class="text-xl font-bold text-emerald-400 mb-1">Fiber Optic Technician (FOT)</h2>
-
-        <p class="text-[11px] text-slate-300">
-            EN: Fiber Optic Technician foundational training.
-            <br>
-            ES: Técnico en Fibra Óptica – curso fundamental.
-        </p>
-
-        <div class="flex items-baseline gap-2 mt-3 mb-3">
-            <span class="text-2xl font-bold text-emerald-400">$399</span>
-            <span class="text-[11px] text-slate-400">USD</span>
-        </div>
-
-        <div class="flex flex-wrap gap-3 mt-2">
-            <!-- PAYPAL FOT BUTTON -->
-            <a
-                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Fiber+Optic+Technician+(FOT)&amount=399&currency_code=USD"
-                target="_blank"
-                class="px-3 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-sm font-semibold"
-            >
-                Enroll with PayPal / Inscribirse
-            </a>
-
-            <a href="FOT_Curriculum_UPDATED.pdf"
-               class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
-                View Curriculum PDF
-            </a>
-
-            <a href="certificate-preview.png"
-               class="px-3 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-sm font-semibold text-white">
-               View Sample Certificate
-            </a>
-        </div>
-    </section>
-
-    <!-- OSP COURSE -->
-    <section class="border border-slate-800 p-6 rounded-xl bg-slate-900">
-        <h2 class="text-xl font-bold text-emerald-400 mb-1">OSP Construction & Deployment</h2>
-
-        <p class="text-[11px] text-slate-300">
-            EN: Outside plant construction & deployment.
-            <br>
-            ES: Construcción OSP y despliegue.
-        </p>
-
-        <div class="flex items-baseline gap-2 mt-3 mb-3">
-            <span class="text-2xl font-bold text-emerald-400">$449</span>
-            <span class="text-[11px] text-slate-400">USD</span>
-        </div>
-
-        <div class="flex flex-wrap gap-3 mt-2">
-            <!-- PAYPAL OSP BUTTON -->
-            <a
-                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=OSP+Construction+%26+Deployment&amount=449&currency_code=USD"
-                target="_blank"
-                class="px-3 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-sm font-semibold"
-            >
-                Enroll with PayPal / Inscribirse
-            </a>
-
-            <a href="OSP_Curriculum_UPDATED.pdf"
-               class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
-                View Curriculum PDF
-            </a>
-
-            <a href="certificate-preview.png"
-               class="px-3 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-sm font-semibold text-white">
-               View Sample Certificate
-            </a>
-        </div>
-    </section>
-
-    <!-- OTDR COURSE -->
-    <section class="border border-slate-800 p-6 rounded-xl bg-slate-900">
-        <h2 class="text-xl font-bold text-emerald-400 mb-1">OTDR Testing & Analysis</h2>
-
-        <p class="text-[11px] text-slate-300">
-            EN: Optical Time Domain Reflectometer testing.
-            <br>
-            ES: Pruebas OTDR y análisis.
-        </p>
-
-        <div class="flex items-baseline gap-2 mt-3 mb-3">
-            <span class="text-2xl font-bold text-emerald-400">$349</span>
-            <span class="text-[11px] text-slate-400">USD</span>
-        </div>
-
-        <div class="flex flex-wrap gap-3 mt-2">
-            <!-- PAYPAL OTDR BUTTON -->
-            <a
-                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=OTDR+Testing+%26+Analysis&amount=349&currency_code=USD"
-                target="_blank"
-                class="px-3 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-sm font-semibold"
-            >
-                Enroll with PayPal / Inscribirse
-            </a>
-
-            <a href="OTDR_Curriculum_UPDATED.pdf"
-               class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
-                View Curriculum PDF
-            </a>
-
-            <a href="certificate-preview.png"
-               class="px-3 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-sm font-semibold text-white">
-               View Sample Certificate
-            </a>
-        </div>
-    </section>
-
-    <!-- SPLICING COURSE -->
-    <section class="border border-slate-800 p-6 rounded-xl bg-slate-900">
-        <h2 class="text-xl font-bold text-emerald-400 mb-1">Fiber Splicing Technician</h2>
-
-        <p class="text-[11px] text-slate-300">
-            EN: Fiber splicing training.
-            <br>
-            ES: Entrenamiento de empalme de fibra.
-        </p>
-
-        <div class="flex items-baseline gap-2 mt-3 mb-3">
-            <span class="text-2xl font-bold text-emerald-400">$299</span>
-            <span class="text-[11px] text-slate-400">USD</span>
-        </div>
-
-        <div class="flex flex-wrap gap-3 mt-2">
-            <!-- PAYPAL SPLICING BUTTON -->
-            <a
-                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=luiggievite@outlook.com&item_name=Fiber+Splicing+Technician&amount=299&currency_code=USD"
-                target="_blank"
-                class="px-3 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-sm font-semibold"
-            >
-                Enroll with PayPal / Inscribirse
-            </a>
-
-            <a href="Splicing_Curriculum_UPDATED.pdf"
-               class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
-                View Curriculum PDF
-            </a>
-
-            <a href="certificate-preview.png"
-               class="px-3 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-sm font-semibold text-white">
-               View Sample Certificate
-            </a>
-        </div>
-    </section>
-
-</main>
+    </main>
 
 </body>
 </html>
