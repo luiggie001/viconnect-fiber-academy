@@ -5,120 +5,156 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Courses - Viconnect Fiber Academy</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="Hybrid bilingual fiber optic training with online theory and hands-on lab days. Job-ready skills for ISP and OSP roles." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230EA5E9'/><text x='50' y='58' text-anchor='middle' font-size='42' fill='white' font-family='system-ui, -apple-system, BlinkMacSystemFont, sans-serif'>VFA</text></svg>">
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
-  <script>
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      if (menu) { menu.classList.toggle('hidden'); }
-    }
-  </script>
 </head>
 
 <body class="bg-slate-950 text-slate-100">
-  <!-- HEADER -->
-  <header class="bg-slate-900/95 border-b border-slate-800 sticky top-0 z-50 backdrop-blur">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-2xl bg-sky-500 flex items-center justify-center text-xl font-bold text-white shadow-lg shadow-sky-500/40">
-          VFA
-        </div>
-        <div>
-          <div class="text-sm font-semibold tracking-wide uppercase text-slate-300">
-            Viconnect Fiber Academy
-          </div>
-          <div class="text-[11px] text-slate-400">
-            Hybrid Fiber Optic Training · Bilingual · Job-Ready
-          </div>
-        </div>
+
+<!-- HEADER -->
+<header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-xs font-bold">
+        VFA
+      </div>
+    </a>
+
+    <nav class="flex items-center gap-6 text-sm font-semibold">
+      <a href="index.html" class="hover:text-sky-400">Home</a>
+      <a href="courses.html" class="text-sky-400 font-bold">Courses</a>
+      <a href="enrollment.html" class="hover:text-sky-400">Enroll</a>
+      <a href="schedule.html" class="hover:text-sky-400">Schedule</a>
+      <a href="verify.html" class="hover:text-sky-400">Verify</a>
+      <a href="contact.html" class="hover:text-sky-400">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-12">
+
+<!-- INTRO SECTION -->
+<section class="space-y-3">
+  <h1 class="text-2xl font-bold text-sky-400">Fiber Optic Certification Programs</h1>
+
+  <p class="text-sm text-slate-300 max-w-2xl">
+    EN: Explore all hybrid bilingual certification programs offered by Viconnect Fiber Academy.
+    Each program includes online theory and an in-person hands-on lab day.
+    <br><br>
+    ES: Explore todos los programas bilingües híbridos ofrecidos por Viconnect Fiber Academy.
+    Cada programa incluye teoría en línea y un día de práctica presencial.
+  </p>
+</section>
+
+<!-- NEW ABOUT SECTION INSERTED HERE -->
+<section class="mt-6 border border-slate-800 bg-slate-900/60 rounded-2xl p-6 space-y-4">
+
+  <h2 class="text-xl font-bold text-sky-400">About the Academy / Sobre la Academia</h2>
+
+  <p class="text-sm text-slate-300">
+    EN: Viconnect Fiber Academy provides bilingual hybrid fiber optic training designed to prepare students for real field work across ISP and OSP environments. Our mission is to deliver affordable, high-quality training aligned with industry standards and real job requirements.
+  </p>
+
+  <p class="text-sm text-slate-300">
+    ES: Viconnect Fiber Academy ofrece entrenamiento híbrido bilingüe en fibra óptica, diseñado para preparar estudiantes para trabajo real en ambientes ISP y OSP. Nuestra misión es brindar capacitación accesible y de alta calidad alineada con los estándares de la industria.
+  </p>
+
+  <h3 class="text-lg font-semibold text-slate-100 mt-4">Instructor: Angel Rodriguez</h3>
+
+  <p class="text-sm text-slate-400">
+    EN/ES: Fiber optic specialist with 20+ years of field experience in installation, splicing,
+    OTDR testing, troubleshooting, aerial/underground deployment, and technician training.
+  </p>
+
+</section>
+
+<!-- COURSES GRID -->
+<section class="space-y-10">
+
+  <!-- FOT COURSE -->
+  <div class="border border-slate-800 p-6 rounded-xl bg-slate-900">
+    <h2 class="text-xl font-bold text-sky-400 mb-2">Fiber Optic Technician (FOT)</h2>
+
+    <p class="text-[12px] text-slate-300">
+      EN: Foundational training covering fiber basics, connectors, tools, safety, testing, and job readiness.
+      <br>
+      ES: Entrenamiento fundamental que cubre conceptos básicos de fibra, conectores, herramientas, seguridad, pruebas y preparación laboral.
+    </p>
+
+    <div class="flex flex-wrap gap-3 mt-4">
+      <a href="enrollment.html" class="px-3 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-sm font-semibold">
+        Enroll / Inscribirse
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-200">
-        <a href="index.html" class="hover:text-sky-400 transition">Home</a>
-        <a href="courses.html" class="hover:text-sky-400 transition">Courses</a>
-        <a href="enrollment.html" class="hover:text-sky-400 transition">Enroll</a>
-        <a href="schedule.html" class="hover:text-sky-400 transition">Schedule</a>
-        <a href="labday.html" class="hover:text-sky-400 transition">Lab Day</a>
-        <a href="certificate.html" class="hover:text-sky-400 transition">Certificate</a>
-        <a href="verify.html" class="hover:text-sky-400 transition">Verify</a>
-        <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
-      </nav>
-
-      <!-- Mobile Menu Button -->
-      <button onclick="toggleMobileMenu()"
-        class="md:hidden inline-flex items-center px-4 py-2 rounded-xl bg-slate-800 text-xs font-semibold tracking-wide text-slate-100 border border-slate-700 shadow-sm active:scale-95 transition">
-        MENU
-      </button>
+      <a href="FOT_Curriculum_UPDATED.pdf" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
+        View Curriculum
+      </a>
     </div>
+  </div>
 
-    <!-- Mobile Nav -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800 bg-slate-900/98">
-      <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
-        <a href="index.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Home</a>
-        <a href="courses.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Courses</a>
-        <a href="enrollment.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Enroll</a>
-        <a href="schedule.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Schedule</a>
-        <a href="labday.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Lab Day</a>
-        <a href="certificate.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Certificate</a>
-        <a href="verify.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Verify</a>
-        <a href="contact.html" class="py-1 text-slate-100 hover:text-sky-400" onclick="toggleMobileMenu()">Contact</a>
-      </nav>
+  <!-- OSP COURSE -->
+  <div class="border border-slate-800 p-6 rounded-xl bg-slate-900">
+    <h2 class="text-xl font-bold text-sky-400 mb-2">OSP Construction & Deployment</h2>
+
+    <p class="text-[12px] text-slate-300">
+      EN: Outside plant construction including aerial, underground, permitting, safety, and installation practices.
+      <br>
+      ES: Construcción OSP incluyendo aéreo, subterráneo, permisos, seguridad y prácticas de instalación.
+    </p>
+
+    <div class="flex flex-wrap gap-3 mt-4">
+      <a href="enrollment.html" class="px-3 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-sm font-semibold">
+        Enroll / Inscribirse
+      </a>
+
+      <a href="OSP_Curriculum_UPDATED.pdf" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
+        View Curriculum
+      </a>
     </div>
-  </header>
+  </div>
 
-  <main class="min-h-[70vh]">
+  <!-- OTDR COURSE -->
+  <div class="border border-slate-800 p-6 rounded-xl bg-slate-900">
+    <h2 class="text-xl font-bold text-sky-400 mb-2">OTDR Testing & Analysis</h2>
 
-    <section class="max-w-6xl mx-auto px-4 pt-10 pb-10 space-y-6">
-      <header class="mb-4">
-        <h1 class="text-2xl md:text-3xl font-bold text-slate-50 mb-2">
-          Hybrid Fiber Optic Certifications
-        </h1>
-        <p class="text-sm text-slate-300 max-w-2xl">
-          EN: Each certification includes online bilingual content and one in-person lab day focused on real-world work.<br />
-          ES: Cada certificación incluye contenido bilingüe en línea y un día de laboratorio presencial enfocado en trabajo real.
-        </p>
-      </header>
-      <div class="space-y-4">
-        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-4">
-          <h2 class="text-lg font-semibold text-slate-50 mb-1">Fiber Optic Technician (FOT)</h2>
-          <p class="text-sm text-slate-300">Fundamentals, safety, connectors, basic splicing, testing and troubleshooting.</p>
-        </article>
-        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-4">
-          <h2 class="text-lg font-semibold text-slate-50 mb-1">OSP Construction &amp; Deployment</h2>
-          <p class="text-sm text-slate-300">Outside plant construction, aerial/underground deployment and best practices.</p>
-        </article>
-        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-4">
-          <h2 class="text-lg font-semibold text-slate-50 mb-1">OTDR Testing &amp; Analysis</h2>
-          <p class="text-sm text-slate-300">OTDR fundamentals, trace interpretation, link events and troubleshooting.</p>
-        </article>
-        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-4">
-          <h2 class="text-lg font-semibold text-slate-50 mb-1">Fiber Splicing Technician</h2>
-          <p class="text-sm text-slate-300">Fusion &amp; mechanical splicing, closures, buffer tube prep and field procedures.</p>
-        </article>
-      </div>
-      <div class="pt-4">
-        <a href="FOT_Curriculum_UPDATED.html" class="text-xs text-sky-400 hover:text-sky-300 underline mr-3">View FOT Curriculum</a>
-        <a href="OSP_Curriculum_UPDATED.html" class="text-xs text-sky-400 hover:text-sky-300 underline mr-3">View OSP Curriculum</a>
-        <a href="OTDR_Curriculum_UPDATED.html" class="text-xs text-sky-400 hover:text-sky-300 underline mr-3">View OTDR Curriculum</a>
-        <a href="Splicing_Curriculum_UPDATED.html" class="text-xs text-sky-400 hover:text-sky-300 underline">View Splicing Curriculum</a>
-      </div>
-      <div class="mt-6">
-        <a href="index.html" class="text-xs text-slate-400 hover:text-sky-400 underline">← Back to Home</a>
-      </div>
-    </section>
+    <p class="text-[12px] text-slate-300">
+      EN: Learn to operate OTDR equipment, interpret traces, diagnose faults, and perform field testing.
+      <br>
+      ES: Aprenda a operar OTDR, interpretar gráficas, diagnosticar fallas y realizar pruebas en campo.
+    </p>
 
-  </main>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <a href="enrollment.html" class="px-3 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-sm font-semibold">
+        Enroll / Inscribirse
+      </a>
 
-  <!-- FOOTER -->
-  <footer class="border-t border-slate-800 bg-slate-900 mt-12">
-    <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-500 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-      <p>© 2025 Viconnect Fiber Academy. Hybrid Fiber Training – Puerto Rico.</p>
-      <p class="text-[11px]">Bilingual EN/ES · ISP &amp; OSP Job-Ready · Small Group Lab Training</p>
+      <a href="OTDR_Curriculum_UPDATED.pdf" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
+        View Curriculum
+      </a>
     </div>
-  </footer>
+  </div>
+
+  <!-- SPLICING COURSE -->
+  <div class="border border-slate-800 p-6 rounded-xl bg-slate-900">
+    <h2 class="text-xl font-bold text-sky-400 mb-2">Fiber Splicing Technician</h2>
+
+    <p class="text-[12px] text-slate-300">
+      EN: Hands-on splicing training covering fusion, mechanical, closures, buffer tubes, and workflow.
+      <br>
+      ES: Entrenamiento de empalme cubriendo fusión, mecánico, cierres, tubos buffer y flujo de trabajo.
+    </p>
+
+    <div class="flex flex-wrap gap-3 mt-4">
+      <a href="enrollment.html" class="px-3 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-sm font-semibold">
+        Enroll / Inscribirse
+      </a>
+
+      <a href="Splicing_Curriculum_UPDATED.pdf" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold">
+        View Curriculum
+      </a>
+    </div>
+  </div>
+
+</section>
+
+</main>
 </body>
 </html>
