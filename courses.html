@@ -1,126 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courses • Viconnect Fiber Academy</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+<main class="max-w-5xl mx-auto px-4 py-12 space-y-10">
 
-<body class="bg-gray-900 text-gray-200">
+    <!-- Fiber Optic Technician (FOT) -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow border border-gray-700">
+        <h2 class="text-2xl font-semibold text-blue-400">Fiber Optic Technician (FOT)</h2>
+        <p class="mt-2 text-gray-300">
+            EN: Entry-level certification covering fiber theory, connectors, testing, and safety.  
+            ES: Certificación inicial en fibra óptica: teoría, conectores, pruebas y seguridad.
+        </p>
+        <p class="mt-4 text-green-400 text-xl font-bold">$495</p>
+        <a href="enrollment.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium">
+            Enroll Now / Matricularse
+        </a>
+    </section>
 
-<!-- HEADER -->
-<header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-        <div class="flex items-center space-x-3">
-            <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
-            <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
-        </div>
+    <!-- Fiber Splicing Technician -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow border border-gray-700">
+        <h2 class="text-2xl font-semibold text-blue-400">Fiber Splicing Technician</h2>
+        <p class="mt-2 text-gray-300">
+            EN: Fusion splicing, cleaving, protection, closures, and field procedures.  
+            ES: Empalme por fusión, corte, protección, cierres y procedimientos en campo.
+        </p>
+        <p class="mt-4 text-green-400 text-xl font-bold">$695</p>
+        <a href="enrollment.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium">
+            Enroll Now / Matricularse
+        </a>
+    </section>
 
-        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
-            class="md:hidden bg-gray-700 px-3 py-1 rounded-lg">
-            MENU
-        </button>
+    <!-- OTDR Testing & Analysis -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow border border-gray-700">
+        <h2 class="text-2xl font-semibold text-blue-400">OTDR Testing & Analysis</h2>
+        <p class="mt-2 text-gray-300">
+            EN: FOA/FOI-standard OTDR setup, event interpretation, and trace analysis.  
+            ES: Configuración OTDR, interpretación de eventos y análisis de trazas según estándares FOA/FOI.
+        </p>
+        <p class="mt-4 text-green-400 text-xl font-bold">$695</p>
+        <a href="enrollment.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium">
+            Enroll Now / Matricularse
+        </a>
+    </section>
 
-        <nav class="hidden md:flex space-x-6 text-gray-300">
-            <a href="index.html" class="hover:text-white">Home</a>
-            <a href="courses.html" class="text-blue-400 font-semibold">Courses</a>
-            <a href="enrollment.html" class="hover:text-white">Enroll</a>
-            <a href="schedule.html" class="hover:text-white">Schedule</a>
-            <a href="labday.html" class="hover:text-white">Lab Day</a>
-            <a href="certificate.html" class="hover:text-white">Certificate</a>
-            <a href="verify.html" class="hover:text-white">Verify</a>
-            <a href="contact.html" class="hover:text-white">Contact</a>
-        </nav>
-    </div>
+    <!-- OSP Fiber Installer -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow border border-gray-700">
+        <h2 class="text-2xl font-semibold text-blue-400">OSP Fiber Installer</h2>
+        <p class="mt-2 text-gray-300">
+            EN: Outside plant installation, cable preparation, safety, and real deployment skills.  
+            ES: Instalación OSP, preparación de cable, seguridad y destrezas reales de despliegue.
+        </p>
+        <p class="mt-4 text-green-400 text-xl font-bold">$595</p>
+        <a href="enrollment.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium">
+            Enroll Now / Matricularse
+        </a>
+    </section>
 
-    <nav id="mobileMenu" class="md:hidden hidden bg-gray-800 border-t border-gray-700 p-4 space-y-2">
-        <a href="index.html" class="block">Home</a>
-        <a href="courses.html" class="block text-blue-400 font-semibold">Courses</a>
-        <a href="enrollment.html" class="block">Enroll</a>
-        <a href="schedule.html" class="block">Schedule</a>
-        <a href="labday.html" class="block">Lab Day</a>
-        <a href="certificate.html" class="block">Certificate</a>
-        <a href="verify.html" class="block">Verify</a>
-        <a href="contact.html" class="block">Contact</a>
-    </nav>
-</header>
+    <!-- Master Technician Program -->
+    <section class="bg-gray-800 p-6 rounded-xl shadow border border-gray-700">
+        <h2 class="text-2xl font-semibold text-blue-400">Master Technician Program (All Certifications)</h2>
+        <p class="mt-2 text-gray-300">
+            EN: Complete professional program including FOT, Splicing, OTDR, and OSP — bilingual hybrid.  
+            ES: Programa profesional completo con FOT, Empalme, OTDR y OSP — híbrido bilingüe.
+        </p>
+        <p class="mt-4 text-green-400 text-xl font-bold">$1,199</p>
+        <a href="enrollment.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium">
+            Enroll Now / Matricularse
+        </a>
+    </section>
 
-
-<!-- MAIN CONTENT -->
-<section class="max-w-5xl mx-auto px-6 py-12">
-    
-    <h1 class="text-3xl md:text-4xl font-bold text-blue-400 mb-2">Fiber Optic Courses</h1>
-    <p class="text-gray-300 mb-8">
-        All programs follow **FOA & FOI recommended training standards**, designed for real-world ISP, OSP, and field technician applications.
-    </p>
-
-
-    <!-- COURSE LIST -->
-    <div class="space-y-10">
-
-        <!-- FOT -->
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-            <h2 class="text-2xl font-semibold text-blue-300">Fiber Optic Technician (FOT)</h2>
-            <p class="text-gray-300 mt-2">
-                Entry-level certification covering fiber theory, connectors, testing, safety, and hands-on fiber optic handling.
-            </p>
-            <div class="mt-4 flex space-x-4">
-                <a href="FOT_Curriculum_UPDATED.html" class="px-4 py-2 bg-blue-500 rounded-lg text-white">View Curriculum</a>
-                <a href="enrollment.html" class="px-4 py-2 bg-green-600 rounded-lg text-white">Enroll</a>
-            </div>
-        </div>
-
-        <!-- Splicing -->
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-            <h2 class="text-2xl font-semibold text-blue-300">Fiber Splicing Technician</h2>
-            <p class="text-gray-300 mt-2">
-                Fusion splicing, mechanical splicing, tray prep, closures, OTDR confirmation, and real-world troubleshooting skills.
-            </p>
-            <div class="mt-4 flex space-x-4">
-                <a href="Splicing_Curriculum_UPDATED.html" class="px-4 py-2 bg-blue-500 rounded-lg text-white">View Curriculum</a>
-                <a href="enrollment.html" class="px-4 py-2 bg-green-600 rounded-lg text-white">Enroll</a>
-            </div>
-        </div>
-
-        <!-- OTDR -->
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-            <h2 class="text-2xl font-semibold text-blue-300">OTDR Testing & Analysis</h2>
-            <p class="text-gray-300 mt-2">
-                Learn professional OTDR setup, event interpretation, trace reading, troubleshooting, and documentation standards.
-            </p>
-            <div class="mt-4 flex space-x-4">
-                <a href="OTDR_Curriculum_UPDATED.html" class="px-4 py-2 bg-blue-500 rounded-lg text-white">View Curriculum</a>
-                <a href="enrollment.html" class="px-4 py-2 bg-green-600 rounded-lg text-white">Enroll</a>
-            </div>
-        </div>
-
-        <!-- OSP -->
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-            <h2 class="text-2xl font-semibold text-blue-300">OSP Fiber Installer</h2>
-            <p class="text-gray-300 mt-2">
-                Outdoor plant installation, cable preparation, aerial/underground deployment, and FOI-style field applications.
-            </p>
-            <div class="mt-4 flex space-x-4">
-                <a href="OSP_Curriculum_UPDATED.html" class="px-4 py-2 bg-blue-500 rounded-lg text-white">View Curriculum</a>
-                <a href="enrollment.html" class="px-4 py-2 bg-green-600 rounded-lg text-white">Enroll</a>
-            </div>
-        </div>
-
-        <!-- Master Program -->
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-            <h2 class="text-2xl font-semibold text-blue-300">Master Technician Program</h2>
-            <p class="text-gray-300 mt-2">
-                Complete certification pathway including FOT, Splicing, OTDR, OSP, and capstone project following FOA/FOI standards.
-            </p>
-            <div class="mt-4 flex space-x-4">
-                <a href="Master_Curriculum_All_Courses.pdf" class="px-4 py-2 bg-blue-500 rounded-lg text-white">Download PDF</a>
-                <a href="enrollment.html" class="px-4 py-2 bg-green-600 rounded-lg text-white">Enroll</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-</body>
-</html>
+</main>
