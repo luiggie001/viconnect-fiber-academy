@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Courses – Viconnect Fiber Academy</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-900 text-gray-200">
@@ -12,122 +12,116 @@
 <!-- HEADER -->
 <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
   <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-    <div class="flex items-center space-x-3">
-      <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
-      <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
-    </div>
+    <a href="index.html" class="flex items-center space-x-3">
+      <div class="bg-blue-600 px-3 py-1 rounded-lg font-bold text-white text-xl">VFA</div>
+      <div class="text-xl font-semibold">Viconnect Fiber Academy</div>
+    </a>
 
-    <!-- Desktop Menu -->
-    <nav class="hidden md:flex space-x-6 text-gray-300">
-      <a href="index.html" class="hover:text-blue-400">Home</a>
-      <a href="courses.html" class="hover:text-blue-400 text-blue-400 font-semibold">Courses</a>
-      <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
-      <a href="schedule.html" class="hover:text-blue-400">Schedule</a>
-      <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
-      <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
-      <a href="verify.html" class="hover:text-blue-400">Verify</a>
-      <a href="contact.html" class="hover:text-blue-400">Contact</a>
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+      class="md:hidden bg-gray-700 px-3 py-1 rounded-lg">MENU</button>
+
+    <nav class="hidden md:flex space-x-6 text-gray-300 font-medium">
+      <a href="index.html" class="hover:text-white">Home</a>
+      <a href="courses.html" class="hover:text-white">Courses</a>
+      <a href="enrollment.html" class="hover:text-white">Enrollment</a>
+      <a href="labday.html" class="hover:text-white">Lab Day</a>
+      <a href="certificate.html" class="hover:text-white">Certificate</a>
+      <a href="verify.html" class="hover:text-white">Verify</a>
+      <a href="contact.html" class="hover:text-white">Contact</a>
     </nav>
-
-    <!-- Mobile Menu Button -->
-    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" 
-      class="md:hidden bg-gray-700 px-3 py-2 rounded-lg text-sm">MENU</button>
   </div>
 
   <!-- Mobile Menu -->
-  <nav id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700 p-4 space-y-3">
-    <a href="index.html" class="block hover:text-blue-400">Home</a>
-    <a href="courses.html" class="block hover:text-blue-400 text-blue-400 font-semibold">Courses</a>
-    <a href="enrollment.html" class="block hover:text-blue-400">Enroll</a>
-    <a href="schedule.html" class="block hover:text-blue-400">Schedule</a>
-    <a href="labday.html" class="block hover:text-blue-400">Lab Day</a>
-    <a href="certificate.html" class="block hover:text-blue-400">Certificate</a>
-    <a href="verify.html" class="block hover:text-blue-400">Verify</a>
-    <a href="contact.html" class="block hover:text-blue-400">Contact</a>
-  </nav>
+  <div id="mobileMenu" class="md:hidden hidden bg-gray-800 border-t border-gray-700 p-4 space-y-3">
+    <a href="index.html" class="block">Home</a>
+    <a href="courses.html" class="block">Courses</a>
+    <a href="enrollment.html" class="block">Enrollment</a>
+    <a href="labday.html" class="block">Lab Day</a>
+    <a href="certificate.html" class="block">Certificate</a>
+    <a href="verify.html" class="block">Verify</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
 </header>
 
-<!-- PAGE CONTENT -->
-<section class="max-w-5xl mx-auto px-4 py-10">
-
-  <h1 class="text-4xl font-bold text-blue-400 mb-6">Certification Courses</h1>
-
-  <p class="text-gray-300 mb-10 text-lg">
-    EN: All programs are hybrid bilingual (EN/ES) — online theory plus a hands-on lab day.  
-    ES: Todos los programas son híbridos bilingües (EN/ES) — teoría en línea más un día de práctica.
+<!-- PAGE TITLE -->
+<section class="max-w-6xl mx-auto px-6 py-12">
+  <h1 class="text-4xl md:text-5xl font-bold text-blue-400">Certification Courses</h1>
+  <p class="text-gray-300 mt-4 text-lg">
+    Bilingual Hybrid Fiber Optic Training (EN/ES) — Online theory with one hands-on lab day.
   </p>
+</section>
 
-  <!-- Course Cards -->
-  <div class="space-y-10">
+<!-- COURSE CARDS -->
+<section class="max-w-6xl mx-auto px-6 space-y-10">
 
-    <!-- FOT -->
-    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow">
-      <h2 class="text-2xl font-bold text-blue-300">Fiber Optic Technician (FOT)</h2>
-      <p class="mt-2 text-gray-300">
-        Entry-level FOA/FOI-style certification for new fiber technicians.  
-        Certificación inicial para nuevos técnicos de fibra óptica.
-      </p>
-      <p class="text-green-400 font-bold text-xl mt-4">$795</p>
-      <a href="enrollment.html" class="inline-block mt-4 bg-green-600 px-6 py-2 rounded-lg font-semibold hover:bg-green-700">
-        Enroll Now / Matricularse
-      </a>
-    </div>
-
-    <!-- Splicing -->
-    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow">
-      <h2 class="text-2xl font-bold text-blue-300">Fiber Splicing Technician</h2>
-      <p class="mt-2 text-gray-300">
-        Fusion splicing, closures, protection, safety & field skills.  
-        Empalme por fusión, cierres, protección, seguridad y técnicas de campo.
-      </p>
-      <p class="text-green-400 font-bold text-xl mt-4">$895</p>
-      <a href="enrollment.html" class="inline-block mt-4 bg-green-600 px-6 py-2 rounded-lg font-semibold hover:bg-green-700">
-        Enroll Now / Matricularse
-      </a>
-    </div>
-
-    <!-- OTDR -->
-    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow">
-      <h2 class="text-2xl font-bold text-blue-300">OTDR Testing & Analysis</h2>
-      <p class="mt-2 text-gray-300">
-        FOA/FOI-aligned OTDR setup, event analysis, trace interpretation.  
-        Configuración OTDR, análisis de eventos e interpretación de trazas.
-      </p>
-      <p class="text-green-400 font-bold text-xl mt-4">$895</p>
-      <a href="enrollment.html" class="inline-block mt-4 bg-green-600 px-6 py-2 rounded-lg font-semibold hover:bg-green-700">
-        Enroll Now / Matricularse
-      </a>
-    </div>
-
-    <!-- OSP -->
-    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow">
-      <h2 class="text-2xl font-bold text-blue-300">OSP Fiber Installer</h2>
-      <p class="mt-2 text-gray-300">
-        Outside-plant installation, safety, troubleshooting & deployment.  
-        Instalación OSP, seguridad, resolución de fallas y despliegue.
-      </p>
-      <p class="text-green-400 font-bold text-xl mt-4">$895</p>
-      <a href="enrollment.html" class="inline-block mt-4 bg-green-600 px-6 py-2 rounded-lg font-semibold hover:bg-green-700">
-        Enroll Now / Matricularse
-      </a>
-    </div>
-
-    <!-- MASTER PROGRAM -->
-    <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow shadow-blue-800/30">
-      <h2 class="text-2xl font-bold text-blue-400">Master Fiber Technician Program</h2>
-      <p class="mt-2 text-gray-300">
-        Complete 4-course bundle (FOT + Splicing + OTDR + OSP).  
-        Paquete completo de 4 certificaciones.
-      </p>
-      <p class="text-green-400 font-bold text-2xl mt-4">$1,199</p>
-      <a href="enrollment.html" class="inline-block mt-4 bg-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-700">
-        Enroll Now / Matricularse
-      </a>
-    </div>
-
+  <!-- FOT -->
+  <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+    <h2 class="text-2xl font-semibold text-blue-400">Fiber Optic Technician (FOT)</h2>
+    <p class="mt-2 text-gray-300">
+      EN: Entry-level certification for new fiber technicians.  
+      ES: Certificación inicial para nuevos técnicos de fibra óptica.
+    </p>
+    <p class="text-green-400 font-bold text-xl mt-4">$795</p>
+    <a href="enrollment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg">
+      Enroll Now / Matricúlate
+    </a>
   </div>
+
+  <!-- Splicing -->
+  <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+    <h2 class="text-2xl font-semibold text-blue-400">Fiber Splicing Technician</h2>
+    <p class="mt-2 text-gray-300">
+      EN: Fusion splicing, closures, fiber protection & field testing.  
+      ES: Empalme por fusión, cierres, protección y pruebas de campo.
+    </p>
+    <p class="text-green-400 font-bold text-xl mt-4">$895</p>
+    <a href="enrollment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg">
+      Enroll Now / Matricúlate
+    </a>
+  </div>
+
+  <!-- OTDR -->
+  <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+    <h2 class="text-2xl font-semibold text-blue-400">OTDR Testing & Analysis</h2>
+    <p class="mt-2 text-gray-300">
+      EN: FOA/FOI-standard OTDR setup, event interpretation & trace reading.  
+      ES: Configuración OTDR, interpretación de eventos y análisis de trazas.
+    </p>
+    <p class="text-green-400 font-bold text-xl mt-4">$895</p>
+    <a href="enrollment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg">
+      Enroll Now / Matricúlate
+    </a>
+  </div>
+
+  <!-- OSP -->
+  <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+    <h2 class="text-2xl font-semibold text-blue-400">OSP Fiber Installer</h2>
+    <p class="mt-2 text-gray-300">
+      EN: OSP construction, cable placement, safety & installation standards.  
+      ES: Construcción OSP, instalación de cables, seguridad y estándares.
+    </p>
+    <p class="text-green-400 font-bold text-xl mt-4">$895</p>
+    <a href="enrollment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg">
+      Enroll Now / Matricúlate
+    </a>
+  </div>
+
+  <!-- MASTER -->
+  <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+    <h2 class="text-2xl font-semibold text-blue-400">Master Technician Program</h2>
+    <p class="mt-2 text-gray-300">
+      EN: Complete bilingual certification package covering all major disciplines.  
+      ES: Programa maestro que cubre todas las certificaciones principales.
+    </p>
+    <p class="text-green-400 font-bold text-xl mt-4">$1,199</p>
+    <a href="enrollment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg">
+      Enroll Now / Matricúlate
+    </a>
+  </div>
+
 </section>
 
 <br><br>
+
 </body>
 </html>
