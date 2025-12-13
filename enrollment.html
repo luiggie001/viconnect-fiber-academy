@@ -1,135 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tuition & Enrollment | Viconnect Fiber Academy</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enrollment | Viconnect Fiber Academy</title>
+  <meta name="description" content="Enroll in Viconnect Fiber Academy hybrid bilingual fiber optic certifications." />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-900 text-gray-200">
-
-<!-- HEADER -->
-<header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-    <div class="flex items-center space-x-3">
-      <div class="bg-blue-500 px-3 py-1 rounded-lg font-bold text-xl text-white">VFA</div>
-      <div class="text-lg font-semibold">Viconnect Fiber Academy</div>
-    </div>
-    <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
-      class="md:hidden bg-gray-700 px-3 py-1 rounded-lg">MENU</button>
-
-    <nav class="hidden md:flex space-x-6 text-gray-200">
-      <a href="index.html" class="hover:text-blue-400">Home</a>
-      <a href="courses.html" class="hover:text-blue-400">Courses</a>
-      <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
-      <a href="schedule.html" class="hover:text-blue-400">Schedule</a>
-      <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
-      <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
-      <a href="verify.html" class="hover:text-blue-400">Verify</a>
-      <a href="contact.html" class="hover:text-blue-400">Contact</a>
-    </nav>
-  </div>
-
-  <div id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
-    <nav class="flex flex-col p-4 space-y-3">
-      <a href="index.html" class="hover:text-blue-400">Home</a>
-      <a href="courses.html" class="hover:text-blue-400">Courses</a>
-      <a href="enrollment.html" class="hover:text-blue-400">Enroll</a>
-      <a href="schedule.html" class="hover:text-blue-400">Schedule</a>
-      <a href="labday.html" class="hover:text-blue-400">Lab Day</a>
-      <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
-      <a href="verify.html" class="hover:text-blue-400">Verify</a>
-      <a href="contact.html" class="hover:text-blue-400">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- MAIN CONTENT -->
-<section class="max-w-5xl mx-auto px-4 py-12">
-
-  <h1 class="text-4xl font-bold text-blue-400 mb-6">
-    Tuition & Enrollment<br>
-    <span class="text-gray-300 text-2xl">Matrícula y Precios</span>
-  </h1>
-
-  <p class=" text-gray-300 mb-10 text-lg">
-    EN: Enroll in bilingual fiber optic certification programs designed using FOA & FOI standards.
-    <br>
-    ES: Inscríbase en programas bilingües de certificación en fibra óptica diseñados con estándares FOA & FOI.
-  </p>
-
-  <!-- COURSE OPTIONS -->
-  <div class="space-y-10">
-
-    <!-- FOT -->
-    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-      <h2 class="text-2xl font-semibold text-blue-400">Fiber Optic Technician (FOT)</h2>
-      <p class="mt-2">EN: Entry-level certification covering fundamentals + hands-on skills.<br>
-         ES: Certificación inicial que cubre fundamentos y habilidades prácticas.</p>
-      <p class="text-green-400 font-bold text-2xl mt-3">$795</p>
-
-      <a href="payment.html?course=FOT"
-         class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg text-white font-semibold">
-        Enroll Now / Inscribirse
+<body class="bg-slate-950 text-slate-200">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="./index.html" class="flex items-center gap-3">
+        <div class="h-11 w-11 rounded-xl bg-blue-600 grid place-items-center font-extrabold text-white shadow">
+          VFA
+        </div>
+        <div>
+          <div class="font-semibold leading-tight">Viconnect Fiber Academy</div>
+          <div class="text-xs text-slate-400">Hybrid Fiber Optic Training • Bilingual (EN/ES)</div>
+        </div>
       </a>
+
+      <button
+        type="button"
+        onclick="toggleMenu()"
+        class="md:hidden rounded-xl border border-slate-700 bg-slate-800/60 px-4 py-2 font-semibold hover:bg-slate-800"
+        aria-label="Open menu"
+      >
+        MENU
+      </button>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a class="hover:text-white" href="./index.html">Home</a>
+        <a class="hover:text-white" href="./courses.html">Courses</a>
+        <a class="hover:text-white font-semibold text-white" href="./enrollment.html">Enroll</a>
+        <a class="hover:text-white" href="./schedule.html">Schedule</a>
+        <a class="hover:text-white" href="./labday.html">Lab Day</a>
+        <a class="hover:text-white" href="./certificate.html">Certificate</a>
+        <a class="hover:text-white" href="./verify.html">Verify</a>
+        <a class="hover:text-white" href="./contact.html">Contact</a>
+      </nav>
     </div>
 
-    <!-- SPLICING -->
-    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-      <h2 class="text-2xl font-semibold text-blue-400">Fiber Splicing Technician</h2>
-      <p class="mt-2">EN: Fusion splicing, closures, protection, and field testing.<br>
-         ES: Empalme por fusión, cierres, protección y pruebas en campo.</p>
-      <p class="text-green-400 font-bold text-2xl mt-3">$895</p>
-
-      <a href="payment.html?course=Splicing"
-         class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg text-white font-semibold">
-        Enroll Now / Inscribirse
-      </a>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-3 grid gap-2 text-sm">
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./index.html">Home</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./courses.html">Courses</a>
+        <a class="rounded-lg px-3 py-2 bg-slate-900" href="./enrollment.html">Enroll</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./schedule.html">Schedule</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./labday.html">Lab Day</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./certificate.html">Certificate</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./verify.html">Verify</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./contact.html">Contact</a>
+      </div>
     </div>
+  </header>
 
-    <!-- OTDR -->
-    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-      <h2 class="text-2xl font-semibold text-blue-400">OTDR Testing & Analysis</h2>
-      <p class="mt-2">EN: FOA/FOI-standard OTDR setup, event interpretation, & troubleshooting.<br>
-         ES: Configuración OTDR, interpretación de eventos y solución de problemas según estándares FOA/FOI.</p>
-      <p class="text-green-400 font-bold text-2xl mt-3">$895</p>
+  <!-- HERO -->
+  <section class="mx-auto max-w-6xl px-4 pt-10 pb-6">
+    <div class="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950 p-7 md:p-10 shadow">
+      <div class="text-xs tracking-[0.35em] text-slate-400">ENROLLMENT • MATRÍCULA</div>
+      <h1 class="mt-3 text-3xl md:text-5xl font-extrabold leading-tight">
+        Enroll in Hybrid Bilingual Training<br/>
+        <span class="text-blue-400">Matricúlate en Adiestramiento Híbrido</span>
+      </h1>
 
-      <a href="payment.html?course=OTDR"
-         class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg text-white font-semibold">
-        Enroll Now / Inscribirse
-      </a>
+      <p class="mt-5 max-w-3xl text-slate-300">
+        <span class="font-semibold text-white">EN:</span> Choose a certification, submit your info, and we’ll confirm schedule + lab day.
+      </p>
+      <p class="mt-2 max-w-3xl text-slate-300">
+        <span class="font-semibold text-white">ES:</span> Selecciona una certificación, envía tu información y confirmaremos el horario + día de laboratorio.
+      </p>
     </div>
+  </section>
 
-    <!-- OSP -->
-    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-      <h2 class="text-2xl font-semibold text-blue-400">OSP Fiber Installer</h2>
-      <p class="mt-2">EN: Outside plant construction, safety, installation & testing.<br>
-         ES: Construcción OSP, seguridad, instalación y pruebas.</p>
-      <p class="text-green-400 font-bold text-2xl mt-3">$895</p>
+  <!-- ENROLLMENT FORM -->
+  <section class="mx-auto max-w-6xl px-4 pb-14">
+    <div class="grid gap-6 md:grid-cols-5">
+      <!-- LEFT: FORM -->
+      <div class="md:col-span-3 rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+        <h2 class="text-xl font-bold text-blue-300">Enrollment Form / Formulario</h2>
+        <p class="mt-2 text-sm text-slate-300">
+          <span class="font-semibold text-white">EN:</span> This form helps us prepare your enrollment. Payment can be completed on the next step.<br/>
+          <span class="font-semibold text-white">ES:</span> Este formulario nos ayuda a preparar tu matrícula. El pago se completa en el próximo paso.
+        </p>
 
-      <a href="payment.html?course=OSP"
-         class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg text-white font-semibold">
-        Enroll Now / Inscribirse
-      </a>
+        <form class="mt-6 grid gap-4" onsubmit="handleSubmit(event)">
+          <div>
+            <label class="text-sm text-slate-300">Select Program / Selecciona Programa</label>
+            <select id="program" class="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100">
+              <option value="fot">Fiber Optic Technician (FOT) — $795</option>
+              <option value="splicing">Fiber Splicing Technician — $895</option>
+              <option value="otdr">OTDR Testing & Analysis — $895</option>
+              <option value="osp">OSP Construction & Deployment — $895</option>
+              <option value="master">Master Technician Program — $1,199</option>
+            </select>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="text-sm text-slate-300">Full Name / Nombre Completo</label>
+              <input id="name" required class="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100" placeholder="John Doe / Juan Pérez" />
+            </div>
+            <div>
+              <label class="text-sm text-slate-300">Phone / Teléfono</label>
+              <input id="phone" required class="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100" placeholder="(xxx) xxx-xxxx" />
+            </div>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="text-sm text-slate-300">Email</label>
+              <input id="email" type="email" required class="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100" placeholder="you@email.com" />
+            </div>
+            <div>
+              <label class="text-sm text-slate-300">Preferred Language / Idioma Preferido</label>
+              <select id="lang" class="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="both" selected>Bilingual (EN/ES)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="text-sm text-slate-300">Notes / Notas (optional)</label>
+            <textarea id="notes" rows="4" class="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100" placeholder="Schedule preference, experience level, etc. / Preferencia de horario, experiencia, etc."></textarea>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button class="rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-500" type="submit">
+              Submit Enrollment / Enviar Matrícula
+            </button>
+            <a href="./payment.html" class="rounded-xl border border-slate-700 bg-slate-800/50 px-6 py-3 font-semibold hover:bg-slate-800">
+              Go to Payment / Ir a Pago
+            </a>
+          </div>
+
+          <div id="result" class="hidden mt-3 rounded-2xl border border-slate-700 bg-slate-950 p-4 text-sm text-slate-300"></div>
+        </form>
+      </div>
+
+      <!-- RIGHT: SUMMARY -->
+      <div class="md:col-span-2 space-y-6">
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+          <h3 class="text-lg font-bold text-blue-300">Tuition Summary / Resumen</h3>
+          <div class="mt-3 space-y-2 text-sm text-slate-300">
+            <div class="flex justify-between"><span>FOT</span><span class="font-semibold text-emerald-400">$795</span></div>
+            <div class="flex justify-between"><span>Splicing</span><span class="font-semibold text-emerald-400">$895</span></div>
+            <div class="flex justify-between"><span>OTDR</span><span class="font-semibold text-emerald-400">$895</span></div>
+            <div class="flex justify-between"><span>OSP</span><span class="font-semibold text-emerald-400">$895</span></div>
+            <div class="border-t border-slate-800 pt-2 flex justify-between">
+              <span class="font-semibold text-slate-200">Master Program</span>
+              <span class="font-extrabold text-emerald-400">$1,199</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+          <h3 class="text-lg font-bold text-blue-300">Hybrid + Lab / Híbrido + Lab</h3>
+          <p class="mt-2 text-sm text-slate-300">
+            <span class="font-semibold text-white">EN:</span> Online bilingual theory + scheduled in-person lab day.<br/>
+            <span class="font-semibold text-white">ES:</span> Teoría bilingüe en línea + día de laboratorio presencial programado.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="./schedule.html" class="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-500">Schedule / Horario</a>
+            <a href="./labday.html" class="rounded-xl border border-slate-700 bg-slate-800/50 px-5 py-3 font-semibold hover:bg-slate-800">Book Lab / Reservar</a>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+          <h3 class="text-lg font-bold text-blue-300">Questions? / ¿Preguntas?</h3>
+          <p class="mt-2 text-sm text-slate-300">
+            <span class="font-semibold text-white">EN:</span> Contact us and we’ll help you pick the best track.<br/>
+            <span class="font-semibold text-white">ES:</span> Contáctanos y te ayudamos a escoger la mejor ruta.
+          </p>
+          <a href="./contact.html" class="mt-4 inline-block rounded-xl border border-slate-700 bg-slate-800/50 px-5 py-3 font-semibold hover:bg-slate-800">
+            Contact / Contacto
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- MASTER PROGRAM -->
-    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-      <h2 class="text-2xl font-semibold text-blue-400">Master Technician Program</h2>
-      <p class="mt-2">EN: Includes all certifications (FOT, Splicing, OTDR, OSP) at a bundled rate.<br>
-         ES: Incluye todas las certificaciones (FOT, Empalme, OTDR, OSP) a precio combinado.</p>
-      <p class="text-green-400 font-bold text-3xl mt-3">$1,199</p>
-
-      <a href="payment.html?course=Master"
-         class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg text-white font-semibold">
-        Enroll Now / Inscribirse
-      </a>
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-400">
+      <div class="font-semibold text-slate-200">Viconnect Fiber Academy</div>
+      <div class="mt-1">Hybrid Fiber Optic Training • Bilingual (EN/ES) • Boquerón, Puerto Rico</div>
     </div>
+  </footer>
 
-  </div>
+  <script>
+    function toggleMenu() {
+      const el = document.getElementById("mobileMenu");
+      el.classList.toggle("hidden");
+    }
 
-</section>
+    const PRICES = {
+      fot: 795,
+      splicing: 895,
+      otdr: 895,
+      osp: 895,
+      master: 1199
+    };
 
+    const TITLES = {
+      fot: "Fiber Optic Technician (FOT)",
+      splicing: "Fiber Splicing Technician",
+      otdr: "OTDR Testing & Analysis",
+      osp: "OSP Construction & Deployment",
+      master: "Master Technician Program"
+    };
+
+    function setFromQuery() {
+      const params = new URLSearchParams(window.location.search);
+      const course = (params.get("course") || "").toLowerCase();
+      if (course && PRICES[course] !== undefined) {
+        document.getElementById("program").value = course;
+      }
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const program = document.getElementById("program").value;
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const lang = document.getElementById("lang").value;
+      const notes = document.getElementById("notes").value.trim();
+
+      const price = PRICES[program];
+      const title = TITLES[program];
+
+      const result = document.getElementById("result");
+      result.classList.remove("hidden");
+      result.innerHTML = `
+        <div class="font-semibold text-blue-300">Enrollment Submitted / Matrícula Enviada</div>
+        <div class="mt-2">
+          <div><span class="text-slate-400">Program:</span> <span class="font-semibold text-slate-100">${title}</span></div>
+          <div><span class="text-slate-400">Tuition:</span> <span class="font-semibold text-emerald-400">$${price}</span></div>
+          <div><span class="text-slate-400">Name:</span> ${escapeHtml(name)}</div>
+          <div><span class="text-slate-400">Phone:</span> ${escapeHtml(phone)}</div>
+          <div><span class="text-slate-400">Email:</span> ${escapeHtml(email)}</div>
+          <div><span class="text-slate-400">Language:</span> ${escapeHtml(lang)}</div>
+          ${notes ? `<div class="mt-2"><span class="text-slate-400">Notes:</span> ${escapeHtml(notes)}</div>` : ""}
+        </div>
+        <div class="mt-3 text-slate-400">
+          EN: Next step: complete payment and we will confirm schedule + lab day. <br/>
+          ES: Próximo paso: completa el pago y confirmaremos horario + día de laboratorio.
+        </div>
+      `;
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, s => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      }[s]));
+    }
+
+    setFromQuery();
+  </script>
 </body>
 </html>
