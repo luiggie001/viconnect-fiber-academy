@@ -1,79 +1,224 @@
-<!-- COURSES SECTION -->
-<section class="max-w-4xl mx-auto px-4 py-10 space-y-10">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses | Viconnect Fiber Academy</title>
+  <meta name="description" content="FOA/FOI-style hybrid bilingual fiber optic certifications: FOT, Splicing, OTDR, OSP, and Master Program." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <!-- FOT -->
-    <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
-        <h2 class="text-2xl font-bold text-blue-400">Fiber Optic Technician (FOT)</h2>
-        <p class="mt-2 text-gray-300">
-            EN: Entry-level FOA/FOI-aligned certification. Hybrid bilingual training (EN/ES): online theory + 1 hands-on lab day.  
-            <br>ES: Certificación inicial alineada con FOA/FOI. Entrenamiento híbrido bilingüe (EN/ES): teoría en línea + 1 día de laboratorio práctico.
-        </p>
-        <p class="mt-4 text-green-400 text-xl font-semibold">$795</p>
+<body class="bg-slate-950 text-slate-200">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="./index.html" class="flex items-center gap-3">
+        <div class="h-11 w-11 rounded-xl bg-blue-600 grid place-items-center font-extrabold text-white shadow">
+          VFA
+        </div>
+        <div>
+          <div class="font-semibold leading-tight">Viconnect Fiber Academy</div>
+          <div class="text-xs text-slate-400">Hybrid Fiber Optic Training • Bilingual (EN/ES)</div>
+        </div>
+      </a>
 
-        <a href="enrollment.html#fot"
-           class="inline-block mt-4 bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-semibold">
-           Enroll Now / Matricúlate
-        </a>
+      <button
+        type="button"
+        onclick="toggleMenu()"
+        class="md:hidden rounded-xl border border-slate-700 bg-slate-800/60 px-4 py-2 font-semibold hover:bg-slate-800"
+        aria-label="Open menu"
+      >
+        MENU
+      </button>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a class="hover:text-white" href="./index.html">Home</a>
+        <a class="hover:text-white font-semibold text-white" href="./courses.html">Courses</a>
+        <a class="hover:text-white" href="./enrollment.html">Enroll</a>
+        <a class="hover:text-white" href="./schedule.html">Schedule</a>
+        <a class="hover:text-white" href="./labday.html">Lab Day</a>
+        <a class="hover:text-white" href="./certificate.html">Certificate</a>
+        <a class="hover:text-white" href="./verify.html">Verify</a>
+        <a class="hover:text-white" href="./contact.html">Contact</a>
+      </nav>
     </div>
 
-    <!-- Splicing -->
-    <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
-        <h2 class="text-2xl font-bold text-blue-400">Fiber Splicing Technician</h2>
-        <p class="mt-2 text-gray-300">
-            EN: Fusion splicing, closures, protection, safety & field testing. Hybrid bilingual format (EN/ES).  
-            <br>ES: Empalme por fusión, cierres, protección, seguridad y pruebas de campo. Formato híbrido bilingüe (EN/ES).
-        </p>
-        <p class="mt-4 text-green-400 text-xl font-semibold">$895</p>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-3 grid gap-2 text-sm">
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./index.html">Home</a>
+        <a class="rounded-lg px-3 py-2 bg-slate-900" href="./courses.html">Courses</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./enrollment.html">Enroll</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./schedule.html">Schedule</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./labday.html">Lab Day</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./certificate.html">Certificate</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./verify.html">Verify</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-900" href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
 
-        <a href="enrollment.html#splicing"
-           class="inline-block mt-4 bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-semibold">
-           Enroll Now / Matricúlate
+  <!-- HERO -->
+  <section class="mx-auto max-w-6xl px-4 pt-10 pb-6">
+    <div class="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950 p-7 md:p-10 shadow">
+      <div class="text-xs tracking-[0.35em] text-slate-400">CERTIFICATIONS • CERTIFICACIONES</div>
+      <h1 class="mt-3 text-3xl md:text-5xl font-extrabold leading-tight">
+        Courses & Tuition<br />
+        <span class="text-blue-400">Cursos y Matrícula</span>
+      </h1>
+
+      <p class="mt-5 max-w-3xl text-slate-300">
+        <span class="font-semibold text-white">EN:</span> Hybrid bilingual training — online theory + one in-person lab day. Tuition below follows a professional FOA/FOI-style structure.
+      </p>
+      <p class="mt-2 max-w-3xl text-slate-300">
+        <span class="font-semibold text-white">ES:</span> Adiestramiento híbrido bilingüe — teoría en línea + un día de laboratorio presencial. La matrícula abajo sigue una estructura profesional tipo FOA/FOI.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="./enrollment.html" class="rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-500">
+          Enroll Now / Matricúlate
         </a>
+        <a href="./labday.html" class="rounded-xl border border-slate-700 bg-slate-800/50 px-5 py-3 font-semibold hover:bg-slate-800">
+          Book Lab Day / Reservar Lab
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE CARDS -->
+  <section class="mx-auto max-w-6xl px-4 pb-14">
+    <div class="grid gap-5 md:grid-cols-2">
+
+      <!-- FOT -->
+      <div class="rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+        <div class="text-xl font-bold text-blue-300">Fiber Optic Technician (FOT)</div>
+        <div class="mt-2 text-slate-300">
+          <span class="font-semibold text-white">EN:</span> Entry-level certification for new fiber technicians (safety, connectors, basic splicing, testing, troubleshooting).<br/>
+          <span class="font-semibold text-white">ES:</span> Certificación inicial para técnicos nuevos (seguridad, conectores, empalme básico, pruebas y solución de problemas).
+        </div>
+
+        <div class="mt-4 flex items-end justify-between">
+          <div>
+            <div class="text-sm text-slate-400">Tuition / Matrícula</div>
+            <div class="text-3xl font-extrabold text-emerald-400">$795</div>
+          </div>
+          <a href="./enrollment.html?course=fot" class="rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-500">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+
+      <!-- SPLICING -->
+      <div class="rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+        <div class="text-xl font-bold text-blue-300">Fiber Splicing Technician</div>
+        <div class="mt-2 text-slate-300">
+          <span class="font-semibold text-white">EN:</span> Fusion & mechanical splicing, closures, buffer tube prep, and field procedures.<br/>
+          <span class="font-semibold text-white">ES:</span> Empalme por fusión y mecánico, cierres, preparación de tubo buffer y procedimientos de campo.
+        </div>
+
+        <div class="mt-4 flex items-end justify-between">
+          <div>
+            <div class="text-sm text-slate-400">Tuition / Matrícula</div>
+            <div class="text-3xl font-extrabold text-emerald-400">$895</div>
+          </div>
+          <a href="./enrollment.html?course=splicing" class="rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-500">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+
+      <!-- OTDR -->
+      <div class="rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+        <div class="text-xl font-bold text-blue-300">OTDR Testing & Analysis</div>
+        <div class="mt-2 text-slate-300">
+          <span class="font-semibold text-white">EN:</span> FOA/FOI-style OTDR setup, event interpretation, trace reading, and troubleshooting.<br/>
+          <span class="font-semibold text-white">ES:</span> Configuración OTDR estilo FOA/FOI, interpretación de eventos, lectura de trazas y diagnóstico.
+        </div>
+
+        <div class="mt-4 flex items-end justify-between">
+          <div>
+            <div class="text-sm text-slate-400">Tuition / Matrícula</div>
+            <div class="text-3xl font-extrabold text-emerald-400">$895</div>
+          </div>
+          <a href="./enrollment.html?course=otdr" class="rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-500">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+
+      <!-- OSP -->
+      <div class="rounded-3xl border border-slate-800 bg-slate-900/40 p-6 shadow">
+        <div class="text-xl font-bold text-blue-300">OSP Construction & Deployment</div>
+        <div class="mt-2 text-slate-300">
+          <span class="font-semibold text-white">EN:</span> Outside plant fundamentals: aerial/underground deployment, best practices, and jobsite workflow.<br/>
+          <span class="font-semibold text-white">ES:</span> Fundamentos de planta externa: despliegue aéreo/subterráneo, mejores prácticas y flujo de trabajo.
+        </div>
+
+        <div class="mt-4 flex items-end justify-between">
+          <div>
+            <div class="text-sm text-slate-400">Tuition / Matrícula</div>
+            <div class="text-3xl font-extrabold text-emerald-400">$895</div>
+          </div>
+          <a href="./enrollment.html?course=osp" class="rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-500">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+
+      <!-- MASTER -->
+      <div class="md:col-span-2 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950 p-7 shadow">
+        <div class="text-xs tracking-[0.35em] text-slate-400">BEST VALUE • MEJOR VALOR</div>
+        <div class="mt-2 text-2xl md:text-3xl font-extrabold text-blue-200">Master Technician Program</div>
+
+        <div class="mt-3 text-slate-300">
+          <span class="font-semibold text-white">EN:</span> Bundle of all core certifications for a complete job-ready path (FOT + Splicing + OTDR + OSP).<br/>
+          <span class="font-semibold text-white">ES:</span> Paquete de todas las certificaciones principales para una ruta completa listo-para-trabajar (FOT + Empalme + OTDR + OSP).
+        </div>
+
+        <div class="mt-5 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+          <div>
+            <div class="text-sm text-slate-400">Master Tuition / Matrícula Master</div>
+            <div class="text-4xl font-extrabold text-emerald-400">$1,199</div>
+            <div class="mt-1 text-sm text-slate-400">
+              <span class="font-semibold text-white">EN:</span> Includes hybrid bilingual content + one in-person lab day per track (scheduled).<br/>
+              <span class="font-semibold text-white">ES:</span> Incluye contenido bilingüe híbrido + un día de laboratorio por área (según calendario).
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="./enrollment.html?course=master" class="rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-500">
+              Enroll Master / Matricular Master
+            </a>
+            <a href="./schedule.html" class="rounded-xl border border-slate-700 bg-slate-800/50 px-6 py-3 font-semibold hover:bg-slate-800">
+              View Schedule / Ver Horario
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- OTDR -->
-    <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
-        <h2 class="text-2xl font-bold text-blue-400">OTDR Testing & Analysis</h2>
-        <p class="mt-2 text-gray-300">
-            EN: FOA/FOI-standard OTDR setup, event interpretation & professional trace reading.  
-            <br>ES: Configuración OTDR según FOA/FOI, interpretación de eventos y lectura profesional de trazas.
-        </p>
-        <p class="mt-4 text-green-400 text-xl font-semibold">$895</p>
-
-        <a href="enrollment.html#otdr"
-           class="inline-block mt-4 bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-semibold">
-           Enroll Now / Matricúlate
-        </a>
+    <div class="mt-10 rounded-2xl border border-slate-800 bg-slate-900/30 p-5 text-sm text-slate-300">
+      <div class="font-semibold text-white">Notes / Notas</div>
+      <ul class="mt-2 list-disc pl-5 space-y-1">
+        <li><span class="font-semibold text-white">EN:</span> Pricing shown is the current academy tuition structure and may be updated as the program expands.</li>
+        <li><span class="font-semibold text-white">ES:</span> La matrícula mostrada es la estructura actual y puede ajustarse según crezca el programa.</li>
+      </ul>
     </div>
+  </section>
 
-    <!-- OSP -->
-    <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
-        <h2 class="text-2xl font-bold text-blue-400">OSP Fiber Installer</h2>
-        <p class="mt-2 text-gray-300">
-            EN: OSP construction, safety, installation, troubleshooting & field deployment. Hybrid bilingual course.  
-            <br>ES: Construcción OSP, seguridad, instalación, resolución de problemas y despliegue en campo. Curso híbrido bilingüe.
-        </p>
-        <p class="mt-4 text-green-400 text-xl font-semibold">$895</p>
-
-        <a href="enrollment.html#osp"
-           class="inline-block mt-4 bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-semibold">
-           Enroll Now / Matricúlate
-        </a>
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-400">
+      <div class="font-semibold text-slate-200">Viconnect Fiber Academy</div>
+      <div class="mt-1">Hybrid Fiber Optic Training • Bilingual (EN/ES) • Boquerón, Puerto Rico</div>
     </div>
+  </footer>
 
-    <!-- MASTER PROGRAM -->
-    <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
-        <h2 class="text-2xl font-bold text-purple-400">Master Technician Program</h2>
-        <p class="mt-2 text-gray-300">
-            EN: Complete 4-course bundle (FOT + Splicing + OTDR + OSP). Full bilingual hybrid training with certification exam preparation.  
-            <br>ES: Paquete completo de 4 cursos (FOT + Empalme + OTDR + OSP). Entrenamiento híbrido bilingüe con preparación para certificación.
-        </p>
-        <p class="mt-4 text-green-400 text-xl font-bold">$1,199</p>
-
-        <a href="enrollment.html#master"
-           class="inline-block mt-4 bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-lg font-semibold">
-           Enroll Now / Matricúlate
-        </a>
-    </div>
-
-</section>
+  <script>
+    function toggleMenu() {
+      const el = document.getElementById("mobileMenu");
+      el.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
